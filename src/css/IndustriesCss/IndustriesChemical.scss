@@ -1,0 +1,157 @@
+.ind-chem-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+.ind-chem-left,
+.ind-chem-right {
+  background-size: cover;
+  height: 700px;
+}
+
+.ind-chem-left {
+  background-image: url("../../images/Ind-Chemical/chemical.png");
+}
+
+.ind-chem-right {
+  background-image: url("../../images/Ind-Chemical/Chemical-bg.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.ind-chem-head {
+  padding-top: 120px;
+}
+
+.ind-chem-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.ind-chem-bi {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.ind-chem-parag-one {
+  padding-top: 20px;
+}
+
+.ind-chem-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.ind-chem-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px;
+  }
+}
+
+.ind-chem-left {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+}
+
+.ind-chem-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.ind-chem-head {
+  padding-top: 120px;
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.ind-chem-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding-top: 10px; /* Adjust font size for smaller screens */
+  }
+}
+
+.ind-chem-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.ind-chem-parag-one {
+  padding-top: 20px;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.ind-chem-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 460px) {
+  .ind-chem-right{
+    height: auto;
+  }
+
+  .ind-chem-left {
+  background-size: cover;
+  height: 300px;
+  }
+  
+  .ind-chem-parag-one {
+  padding-top: 0px;
+  }
+  .ind-chem-head {
+  padding-top: 20px;
+  }
+  
+  .ind-chem-parag {
+  padding-top: 5px;
+  font-size: 16px;
+  text-align: justify;
+  }
+  }

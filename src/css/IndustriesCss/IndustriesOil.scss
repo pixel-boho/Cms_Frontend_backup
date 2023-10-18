@@ -1,0 +1,162 @@
+.ind-oil-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+.ind-oil-left {
+  background-size: cover;
+  height: 700px;
+}
+
+.ind-oil-right {
+  background-size: cover;
+  height: 700px;
+  background-image: url("../../images/Ind-Oil-Gas/Ind-Oil-Gas-bg.png");
+}
+
+.ind-oil-left {
+  background-image: url("../../images/Ind-Oil-Gas/oil-gas.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.ind-oil-head {
+  padding-top: 120px;
+}
+
+.ind-oil-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.ind-oil-bi {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.ind-oil-parag-one {
+  padding-top: 20px;
+}
+
+.ind-oil-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.ind-oil-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px;
+  }
+}
+
+.ind-oil-left {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+}
+
+.ind-oil-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 770px; /* Adjust height for smaller screens */
+  }
+
+  @media (max-width: 460px) {
+    height: 650px;
+  }
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.ind-oil-head {
+  padding-top: 120px;
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.ind-oil-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding-top: 10px; /* Adjust font size for smaller screens */
+  }
+}
+
+.ind-oil-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.ind-oil-parag-one {
+  padding-top: 20px;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.ind-oil-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 460px) {
+.ind-oil-right{
+  height: auto;
+}
+
+.ind-oil-left {
+background-size: cover;
+height: 300px;
+}
+
+.ind-oil-parag-one {
+padding-top: 0px;
+}
+.ind-oil-head {
+padding-top: 20px;
+}
+
+.ind-oil-parag {
+padding-top: 5px;
+font-size: 16px;
+text-align: justify;
+}
+}

@@ -1,0 +1,431 @@
+.office-oman-head-pad{
+    padding-top: 50px;
+    padding-bottom: 85px;
+}
+
+.office-oman-head-pad-office h3{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.office-main-office-list{
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left:0px ;
+}
+
+.office-bg-off-c {
+    background: linear-gradient(to bottom, #193377, #009ADB);
+    width: 100%;
+    height: 360px;
+    margin-bottom: 90px;
+}
+
+.office-column img {
+    height: auto;
+    transform: translateY(-65px);
+    width: 76%;
+    padding-left: 90px;
+}
+
+.office-info{
+    color: white;
+}
+
+.office-info h6{
+ padding-top: 17px;
+ font-size: 18px;
+ font-weight: 600;
+}
+
+.office-info p{
+    font-size: 14px;
+}
+
+.office-info-one{
+    color: white;
+}
+
+.office-info-one h6{
+ padding-top: 10px;
+ font-size: 17px;
+ font-weight: 600;
+}
+
+.office-info-one p{
+    font-size: 14px;
+}
+
+.office-selected-icon {
+    transition: all 0.3s ease; 
+  }
+  
+  .office-selected-icon:hover {
+    background-color: transparent;
+    color: #dd0623; 
+    transform: scale(1.5); 
+    transition: all 0.2s ease; 
+  }  
+
+.office-column i {
+    color: #E50027;
+    top: 365px; /* Duqm */
+    left: 260px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+/* Target the second icon */
+.office-column i:nth-child(2) {
+    color:#E50027; /* You can use a different color for the second icon */
+    top: 25px; /* Adjust the top position as needed */
+    left: 355px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+.office-column i:nth-child(3) {
+    color:#E50027; /* You can use a different color for the second icon */
+    top: 50px; /* Adjust the top position as needed */
+    left: 375px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+.office-column i:nth-child(4) {
+    color:#E50027; /* You can use a different color for the second icon */
+    top: 46px; /* Adjust the top position as needed */
+    left: 405px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+.office-column i:nth-child(5) {
+    color:#E50027; /* You can use a different color for the second icon */
+    top: 75px; /* Adjust the top position as needed */
+    left: 403px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+.office-column i:nth-child(6) {
+    color:#E50027; /* You can use a different color for the second icon */
+    top: 77px; /* Adjust the top position as needed */
+    left: 434px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+.office-column i:nth-child(7) {
+    color:#E50027; /* You can use a different color for the second icon */
+    top: 110px; /* Adjust the top position as needed */
+    left: 510px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+.office-column i:nth-child(8) {
+    color:#E50027; /* You can use a different color for the second icon */
+    top: 260px; /* Adjust the top position as needed */
+    left: 396px; /* Adjust the left position as needed */
+    position: absolute;
+    z-index: 2;
+}
+
+/* Styles for screens with a width up to 460px */
+@media (max-width: 560px) {
+    .office-oman-head-pad{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .office-oman-head-pad-office h3{
+        text-align: center;
+        padding-bottom: 5px;
+        font-weight: 600;
+        font: 35px;
+    }
+
+    .office-main-office-list{
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+    }
+    
+    .office-bg-off-c {
+        background: linear-gradient(to bottom, #193377, #009ADB);
+        width: 100%;
+        height: auto;
+        margin-bottom: 90px;
+    }
+    
+    .office-column img {
+        padding-top: 30px;
+        height: 100%;
+        width: 100%;
+        transform: none;
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+    
+    .office-info{
+        color: white;
+    }
+    
+    .office-info h6{
+     padding-top: 17px;
+     font-size: 18px;
+     font-weight: 600;
+     text-align: center;
+    }
+    
+    .office-info p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .office-info-one{
+        color: white;
+    }
+    
+    .office-info-one h6{
+     padding-top: 10px;
+     font-size: 17px;
+     font-weight: 600;
+     text-align: center;
+    }
+    
+    .office-info-one p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* CareersCss/CareersOffices.css */
+    
+    .office-selected-icon {
+        transition: all 0.3s ease; 
+      }
+      
+      .office-selected-icon:hover {
+        background-color: transparent;
+        color: #dd0623; 
+        transform: scale(1.5); 
+        transition: all 0.2s ease; 
+      }  
+    
+    .office-column i {
+        color: #E50027;
+        top: 385px; /* Duqm */
+        left: 140px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    /* Target the second icon */
+    .office-column i:nth-child(2) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 98px; /* Adjust the top position as needed */
+        left: 220px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(3) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 123px; /* Adjust the top position as needed */
+        left: 238px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(4) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 123px; /* Adjust the top position as needed */
+        left: 265px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(5) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 142px; /* Adjust the top position as needed */
+        left: 262px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(6) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 144px; /* Adjust the top position as needed */
+        left: 287px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(7) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 175px; /* Adjust the top position as needed */
+        left: 350px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(8) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 310px; /* Adjust the top position as needed */
+        left: 260px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+
+@media (max-width: 361px) {
+    .office-oman-head-pad{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .office-oman-head-pad-office h3{
+        text-align: center;
+        padding-bottom: 5px;
+        font-weight: 600;
+        font: 35px;
+    }
+
+    .office-main-office-list{
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+    }
+    
+    .office-bg-off-c {
+        background: linear-gradient(to bottom, #193377, #009ADB);
+        width: 100%;
+        height: auto;
+        margin-bottom: 90px;
+    }
+    
+    .office-column img {
+        padding-top: 30px;
+        height: 100%;
+        width: 100%;
+        transform: none;
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+    
+    .office-info{
+        color: white;
+    }
+    
+    .office-info h6{
+     padding-top: 17px;
+     font-size: 18px;
+     font-weight: 600;
+     text-align: center;
+    }
+    
+    .office-info p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .office-info-one{
+        color: white;
+    }
+    
+    .office-info-one h6{
+     padding-top: 10px;
+     font-size: 17px;
+     font-weight: 600;
+     text-align: center;
+    }
+    
+    .office-info-one p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* CareersCss/CareersOffices.css */
+    
+    .office-selected-icon {
+        transition: all 0.3s ease; 
+      }
+      
+      .office-selected-icon:hover {
+        background-color: transparent;
+        color: #dd0623; 
+        transform: scale(1.5); 
+        transition: all 0.2s ease; 
+      }  
+    
+    .office-column i {
+        color: #E50027;
+        top: 370px; /* Duqm */
+        left: 130px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    /* Target the second icon */
+    .office-column i:nth-child(2) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 100px; /* Adjust the top position as needed */
+        left: 215px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(3) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 123px; /* Adjust the top position as needed */
+        left: 238px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(4) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 123px; /* Adjust the top position as needed */
+        left: 265px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(5) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 142px; /* Adjust the top position as needed */
+        left: 262px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(6) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 144px; /* Adjust the top position as needed */
+        left: 287px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(7) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 172px; /* Adjust the top position as needed */
+        left: 334px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .office-column i:nth-child(8) {
+        color:#E50027; /* You can use a different color for the second icon */
+        top: 295px; /* Adjust the top position as needed */
+        left: 250px; /* Adjust the left position as needed */
+        position: absolute;
+        z-index: 2;
+    }
+}

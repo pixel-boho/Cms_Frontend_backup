@@ -1,0 +1,118 @@
+.careers-saudi-nav-bg {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-image: 
+      url("./../../images/CountryBanner/SaudiArabiaBanner.jpg");
+    background-position: center;
+  }
+  
+  .careers-saudi-quote {
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 0;
+  }
+  .careers-saudi-quote-img img {
+    width: 50px;
+    padding-top: 150px;
+    position: fixed;
+    justify-content: right;
+    right: 0;
+    z-index: 3;
+  }
+  
+  .careers-saudi-text {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 180px;
+  }
+  
+  .careers-saudi-text1 {
+    color: rgb(255, 255, 255,0.8);
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  
+  /* nav-bg text */
+  .careers-saudi-text-nav {
+    font-size: 16px;
+    padding-top: 20px;
+    font-weight: 600;
+  }
+  
+  .careers-saudi-text-nav-1{
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  
+  .careers-saudi-text-nav-pad {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  
+  .careers-saudi-text-nav {
+    font-size: 16px;
+  
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  
+  .careers-saudi-text-nav-pad {
+    padding-left: 180px;
+    padding-right: 180px;
+  
+    @media (max-width: 768px) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  
+  @media (max-width: 659px) {
+    .careers-saudi-quote-img img {
+      width: 30px;
+      padding-top: 150px;
+      position: fixed;
+      justify-content: right;
+      right: 0;
+      z-index: 3;
+    }
+  
+    .careers-saudi-text {
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      font-weight: 700;
+      padding-top: 100px;
+    }
+  
+    .careers-saudi-nav-bg {
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+      background-image: 
+      url("./../../images/CountryBanner/SaudiArabiaBanner.jpg");
+      background-position: center;
+      margin-bottom: 15px;
+    }
+    
+  /* nav-bg text */
+  .careers-saudi-text-nav {
+    font-size: 14px;
+    padding-top: 2px;
+    font-weight: 600;
+  }
+  
+  .careers-saudi-text-nav-1{
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  
+    .careers-saudi-text1 {
+      color: rgb(255, 255, 255,0.8);
+      font-size: 13px;
+      padding-top: 5px;
+    }
+}

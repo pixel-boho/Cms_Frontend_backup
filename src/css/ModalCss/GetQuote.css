@@ -1,0 +1,121 @@
+.container-g-q h4{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.form-label-g-q{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.transparent-input-g-q {
+    background-color: transparent !important;
+    width: 100%; 
+    margin-bottom: 2px;   
+  }
+
+  .transparent-input-g-q::placeholder {
+    color: rgba(243, 243, 243, 0.3);
+    font-size: 12px;
+    padding: 1px;
+    width: 100%;
+  }
+
+  .btn-custom-g-q {
+    padding: 5px 10px;
+    background-color: transparent !important;
+    width: auto;
+  }
+
+.form-container-g-q label{
+    color: rgb(228, 228, 228);
+    float: left;
+    height: 12px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.form-container-g-q input{
+    background-color: transparent !important;
+border: 1px solid #ffffff;
+border-radius: 4px;
+height: 25px;
+color: #fff;
+}
+
+.form-container-g-q textarea{
+  background-color: transparent !important;
+  width: 100%; 
+border: 1px solid #ffffff;
+border-radius: 4px;
+height: 90px;
+color: white;
+}
+
+.container-g-q .form-container-g-q .form-field3 {
+  padding: 0;
+  padding-right: 12px;
+}
+
+.form-field4 {
+  padding: 0;
+/* display: none; */
+
+}
+
+
+
+@media (max-width: 460px) {
+  .container-g-q h4{
+    color: #ffffff;
+    font-weight: 600;
+padding: 5px;
+}
+
+.form-label-g-q{
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.transparent-input-g-q {
+  background-color: transparent !important;
+  width: 100%; 
+  margin-bottom: 0px;
+}
+
+.transparent-input-g-q::placeholder {
+  font-size: 10px;
+  padding-left: 1px;
+  width: 100%;
+}
+
+.btn-custom-g-q {
+  padding: 5px 5px;
+  background-color: transparent !important;
+  width: auto;
+  font-size: 14px;
+}
+
+.form-container-g-q label{
+  color: rgb(228, 228, 228);
+  float: left;
+  height: 9px;
+  width: 50%;
+}
+.form-container-g-q input{
+  background-color: transparent !important;
+  width: 100%; 
+border: 1px solid #ffffff;
+border-radius: 4px;
+height: 28px;
+}
+
+.transparent-input-g-q{
+max-height: 100px;
+}
+
+
+}

@@ -1,0 +1,171 @@
+.ship-spare-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+.spare-left,
+.spare-right {
+  background-size: cover;
+  height: 750px;
+}
+
+.spare-left {
+  background-image: url("../../images/ShipSpareLogistics/spare-carrying.png");
+}
+
+.spare-right {
+  background-image: url("../../images/ShipSpareLogistics/spare-trans.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.spare-head {
+  padding-top: 120px;
+}
+
+.spare-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.spare-bi {
+  padding-left: 20px;
+  width: 52px;
+}
+
+.spare-parag-one {
+  padding-top: 20px;
+}
+
+.spare-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.spare-learn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.ship-spare-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px;
+  }
+}
+
+.spare-left {
+  background-size: cover;
+  height: 750px;
+
+  @media (max-width: 768px) {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+}
+
+.spare-right {
+  background-size: cover;
+  height: 750px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+/* Add a class to trigger the animation */
+.ship-spare-start.zoom-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.spare-head {
+  padding-top: 120px;
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.spare-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding-top: 10px; /* Adjust font size for smaller screens */
+  }
+}
+
+.spare-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.spare-parag-one {
+  padding-top: 20px;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.spare-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 460px) {
+  .spare-right{
+    height: auto;
+  }
+  .ship-spare-start {
+    width: 90%; /* Set the container width to 80% */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 30px 0;
+  }
+  .spare-left {
+  background-size: cover;
+  height: 300px;
+}
+
+.spare-parag-one {
+  padding-top: 0px;
+}
+.spare-head {
+  padding-top: 20px;
+}
+
+.spare-parag {
+  padding-top: 5px;
+  font-size: 16px;
+  text-align: justify;
+}
+}

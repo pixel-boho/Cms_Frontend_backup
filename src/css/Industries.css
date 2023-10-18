@@ -1,0 +1,144 @@
+.indus-containers {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.our-ind-text-nav-pad {
+  padding-bottom: 20px;
+}
+
+.card-title-indus {
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.market-page-one {
+  flex-wrap: wrap;
+}
+
+.card-indus {
+  padding-top: 50px;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.indus-count-num {
+  position: absolute;
+  top: 315px; /* Adjust the top position as needed */
+  right: -14px; /* Adjust the right position as needed */
+  background-color: rgba(255, 255, 255);
+  border: 0 solid white; /* Changed 'border: 0px solid white;' to 'border: 0 solid white;' */
+  padding: 14px 25px 14px 25px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.indus-count-num-hover img {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.indus-count-num-hover:hover img {
+  filter: grayscale(0%);
+}
+
+.icon-zoom-in {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-zoom-in.zoomed {
+  transform: scale(1.2);
+}
+
+/* Add this CSS to Industries.css */
+.card-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hide the scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide the scrollbar for Internet Explorer/Edge */
+}
+
+.card-scrollll {
+  padding-top: 10px;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-all-indus-page {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.indus-spacing {
+  padding-bottom: 30px;
+}
+
+.arrow-icons-industry-lr{
+  padding-top: 30px;
+}
+
+@media (max-width: 460px) {
+  .differentiators-header {
+      font-size: 40px;
+  }
+
+  .differentiators-description {
+      font-size: 14px;
+  }
+
+  .car-bi-industry-last-pad {
+      padding-bottom: 60px;
+  }
+
+  .car-bi-industry-icon-bg {
+      padding-left: 150px;
+  }
+
+  .indus-spacing {
+      padding-bottom: 0px;
+  }
+
+  .icons-indus-page {
+      padding-bottom: 30px;
+  }
+
+  .indus-containers {
+    padding-top: 0px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 460px) {
+  .differentiators-header {
+      font-size: 40px;
+  }
+
+  .differentiators-description {
+      font-size: 14px;
+  }
+
+  .car-bi-industry-last-pad {
+      padding-bottom: 60px;
+  }
+
+  .car-bi-industry-icon-bg {
+      padding-left: 150px;
+  }
+
+  .indus-spacing {
+      padding-bottom: 0px;
+  }
+
+  .icons-indus-page {
+      padding-bottom: 30px;
+  }
+
+  .indus-containers {
+    padding-top: 0px;
+    padding-bottom: 35px;
+  }
+}

@@ -1,0 +1,243 @@
+.aviation-def-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+.aviation-def-left,
+.aviation-def-right {
+  background-size: cover;
+  height: 700px;
+}
+
+.aviation-def-left {
+  background-image: url("../../images//AviationDefenceLogistics/aviation-bg.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.aviation-def-head {
+  padding-top: 120px;
+  color: rgb(0, 0, 0);
+}
+
+.aviation-def-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
+
+.aviation-def-bi {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.aviation-def-parag-one {
+  padding-top: 20px;
+  color: black;
+}
+
+.aviation-def-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.aviation-def-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 20px;
+  }
+}
+
+.aviation-def-left,
+.aviation-def-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 400px; /* Adjust height for smaller screens */
+  }
+}
+
+.aviation-def-left {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 350px;
+  }
+}
+
+.aviation-def-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 790px; /* Adjust height for smaller screens */
+  }
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.aviation-def-head {
+  padding-top: 120px;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.aviation-def-parag {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+.aviation-def-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.aviation-def-parag-one {
+  padding-top: 20px;
+  color: black;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.aviation-def-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+.aviation-def-left,
+.aviation-def-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 480px) {
+    height: 400px; /* Adjust height for smaller screens */
+  }
+}
+
+.aviation-def-left {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 480px) {
+    height: 350px;
+  }
+}
+
+.aviation-def-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 480x) {
+    height: 790px; /* Adjust height for smaller screens */
+  }
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 480px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.aviation-def-head {
+  padding-top: 120px;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 480px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.aviation-def-parag {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+
+  @media (max-width: 480px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+.aviation-def-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 480px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.aviation-def-parag-one {
+  padding-top: 20px;
+  color: black;
+
+  @media (max-width: 480px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.aviation-def-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 480px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 460px) {
+  .aviation-def-right{
+    height: 660px;
+  }
+}
+
+@media (max-width:460px) {
+  .aviation-def-start .row {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of elements */
+  }
+}
+

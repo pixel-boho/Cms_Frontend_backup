@@ -1,0 +1,130 @@
+.our-ind-nav-bg {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/Our-Industries/Our-ind.png");
+  background-position: center;
+}
+
+.quote-ind-h {
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 0;
+}
+
+.quote-ind-h img {
+  width: 50px;
+  padding-top: 150px;
+  position: fixed;
+  justify-content: right;
+  right: 0;
+  z-index: +3;
+}
+
+.our-ind-text {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 180px;
+  padding-right: 0;
+}
+
+.our-ind-text1 {
+  color: rgb(255, 255, 255,0.8);
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+/* nav-bg text */
+.ind-text-nav {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.our-ind-text-nav{
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.our-ind-text-nav-pad {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.our-ind-quote-img img {
+  float: right;
+  width: 20px;
+  padding-top: 110px;
+}
+
+.our-ind-text-nav {
+  font-size: 14px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.our-ind-text-nav-pad {
+  padding-left: 180px;
+  padding-right: 180px;
+
+  @media (max-width: 768px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+
+//media 659
+
+@media (max-width: 659px) {
+  .quote-ind-h img {
+    width: 30px;
+    padding-top: 150px;
+    position: fixed;
+    justify-content: right;
+    right: 0;
+  }
+
+  .our-ind-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 100px;
+  }
+
+  .our-ind-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/Our-Industries/Our-ind.png");
+    background-position: center;
+  }
+  
+/* nav-bg text */
+.our-ind-text-nav {
+  font-size: 14px;
+  padding-top: 2px;
+  font-weight: 600;
+}
+
+.our-ind-text-nav-1{
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+  .our-ind-text1 {
+    color: rgb(255, 255, 255,0.8);
+    font-size: 13px;
+    padding-top: 5px;
+  }
+
+  .our-ind-text-nav-pad {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

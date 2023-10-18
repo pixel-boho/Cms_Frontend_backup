@@ -1,0 +1,275 @@
+.about-us-nav-bg {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../images/AboutHeader/MaskAbout.png");
+  background-position: center;
+  margin-bottom: 60px;
+}
+
+.about-us-quote {
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 0;
+}
+.about-us-quote-img img {
+  width: 50px;
+  padding-top: 150px;
+  position: fixed;
+  justify-content: right;
+  right: 0;
+  z-index: 6;
+}
+
+.last-about-sec-pad {
+  padding-bottom: 30px;
+}
+
+.about-us-text {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 180px;
+}
+
+.about-us-text1 {
+  color: rgb(255, 255, 255,0.8);
+  font-size: 16px;
+  padding: 2px 170px 0px 170px;
+}
+
+/* nav-bg text */
+.about-us-text-nav {
+  font-size: 16px;
+}
+
+.about-us-text-nav-pad {
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+/* Media Query*/
+
+@media (max-width: 320px){
+  .about-us-quote-img img {
+    width: 28px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+    margin-right: 0;
+  }
+
+  .about-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 100px;
+  }
+
+  .about-us-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../../images/AboutHeader/MaskAbout.png");
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-text1 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px){
+  .about-us-quote-img img {
+    width: 30px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+  }
+
+  .about-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 100px;
+  }
+
+  .about-us-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../../images/AboutHeader/MaskAbout.png");
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-text1 {
+display: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .about-us-quote-img img {
+    width: 30px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+  }
+
+  .about-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 100px;
+  }
+
+  .about-us-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../../images/AboutHeader/MaskAbout.png");
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-text1 {
+display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-quote-img img {
+    width: 35px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+  }
+
+  .about-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 90px;
+  }
+
+  .about-us-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../../images/AboutHeader/MaskAbout.png");
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-text1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    padding: 2px 55px 0px 55px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-us-quote-img img {
+    width: 35px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+  }
+
+  .about-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 90px;
+  }
+
+  .about-us-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../../images/AboutHeader/MaskAbout.png");
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-text1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    padding: 2px 35px 0px 35px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .about-us-quote-img img {
+    width: 35px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+  }
+
+  .about-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 90px;
+  }
+
+  .about-us-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../../images/AboutHeader/MaskAbout.png");
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-text1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    padding: 2px 35px 0px 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-us-quote-img img {
+    width: 35px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+  }
+
+  .about-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 90px;
+  }
+
+  .about-us-nav-bg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../../images/AboutHeader/MaskAbout.png");
+    background-position: center;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-text1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    padding: 2px 35px 0px 35px;
+  }
+}

@@ -1,0 +1,102 @@
+.AboutCertifiedHOne {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.certifiedBox {
+  border: 0px solid #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease, border 0.5s ease; /* Add smooth transitions for box-shadow and border */
+}
+
+.certifiedBox:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Change box shadow on hover */
+  border: 1px solid #ffffff; /* Change border color on hover */
+  /* Add any additional styles you want to apply on hover */
+}
+
+
+.cerifiedImgRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowDescription {
+  margin-top: 10px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Media Query for 321px to 480px */
+@media (max-width: 460px) {
+  .AboutCertifiedHOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 35px!important;
+    font-weight: 800;
+  }
+  
+}
+
+/* Media Query for 481px to 600px */
+@media (max-width: 600px) {
+  .AboutCertifiedHOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+  }
+}
+
+/* Media Query for 601px to 768px */
+@media (max-width: 768px) {
+  .AboutCertifiedHOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+  }
+}
+
+/* Media Query for 769px to 900px */
+@media (max-width: 900px) {
+  .AboutCertifiedHOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+  }
+}
+
+/* Media Query for 901px to 1024px */
+@media (max-width: 1024px) {
+  .AboutCertifiedHOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+  }
+}
+
+/* Media Query for 1025px to 1200px */
+@media (max-width: 1200px) {
+  .AboutCertifiedHOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+  }
+}
+

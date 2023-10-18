@@ -1,0 +1,229 @@
+.simplyAboutTop {
+  padding-top: 360px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.simplyAboutBg {
+  background: linear-gradient(to bottom, #193377, #009ADB);
+  background-repeat: no-repeat;
+  text-align: center;
+  height: auto;
+  margin: 15px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.simplyAboutBg:hover {
+  background: linear-gradient(to right, #193377, #009ADB);
+  transform: scale(1.05);
+  transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+.simplyAboutBg img{
+  width: 30%;
+}
+
+.simplyAboutHeadOne{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.simplyAboutBgOne {
+  padding: 30px;
+}
+
+.simplyAboutHead{
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.simplyAboutHeading {
+  color: white;
+  font-weight: 500;
+}
+
+.simplyAboutParag {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+}
+
+.simplyAboutParagh {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Media Query for 321px to 480px */
+@media (max-width: 480px) {
+  .simplyAboutTop {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  
+  .simplyAboutBg {
+    background: linear-gradient(to bottom, #193377, #009ADB);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: auto;
+    margin: 5px;
+    border: 0px;
+    border-radius: 10px;
+  }
+  
+  .simplyAboutBg:hover {
+    display: none;
+  }
+  
+  .simplyAboutBg img{
+    width: 30%;
+  }
+  
+  .simplyAboutHeadOne{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .simplyAboutBgOne {
+    padding: 30px;
+  }
+  
+  .simplyAboutHead{
+    font-size: 35px!important;
+    font-weight: 800;
+  }
+  
+  .simplyAboutHeading {
+    color: white;
+    font-weight: 500;
+  }
+  
+  .simplyAboutParag {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+  }
+  
+  .simplyAboutParagh {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
+/* Media Query for 481px to 600px */
+@media (max-width: 600px) {
+  .simplyAboutTop {
+    padding-top: 80px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  
+  .simplyAboutBg {
+    background: linear-gradient(to bottom, #193377, #009ADB);
+    background-repeat: no-repeat;
+    text-align: center;
+    height:auto;
+    margin: 15px;
+    border: 0px;
+    border-radius: 10px;
+  }
+  
+  .simplyAboutBg:hover {
+display: none;
+  }
+  
+  .simplyAboutBg img{
+    width: 30%;
+  }
+  
+  .simplyAboutHeadOne{
+    padding-left: 40px;
+    padding-right: 70px;
+  }
+  
+  .simplyAboutBgOne {
+    padding: 30px;
+  }
+  
+  .simplyAboutHead{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  
+  .simplyAboutHeading {
+    color: white;
+    font-weight: 500;
+  }
+  
+  .simplyAboutParag {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+  }
+  
+  .simplyAboutParagh {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .simplyAboutTop {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  
+  .simplyAboutBg {
+    background: linear-gradient(to bottom, #193377, #009ADB);
+    background-repeat: no-repeat;
+    text-align: center;
+    height:auto;
+    margin: 15px 40px 15px 110px;
+    border: 0px;
+    border-radius: 10px;
+  }
+  
+  .simplyAboutBg:hover {
+display: none;
+  }
+  
+  .simplyAboutBg img{
+    width: 30%;
+  }
+  
+  .simplyAboutHeadOne{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  
+  .simplyAboutBgOne {
+    padding: 30px;
+  }
+  
+  .simplyAboutHead{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  
+  .simplyAboutHeading {
+    color: white;
+    font-weight: 500;
+  }
+  
+  .simplyAboutParag {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+  }
+  
+  .simplyAboutParagh {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,97 @@
+/* Left Section */
+.contact-us-arrange {
+  padding-top: 15%;
+
+}
+
+.contact-us-heads {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100px;
+  padding-bottom: 20px;
+
+  @media (max-width: 460px) {
+    font-size: 50px;
+    line-height: 65px;
+    
+  }
+}
+
+.contact-us-paragh {
+  font-size: 14px;
+  width: 90%;
+  text-align: justify;
+}
+
+// Contact us container top padding
+
+.contact-us-split-form {
+  padding-top: 60px;
+
+  @media (max-width: 460px) {
+    padding-top: 12px;
+  }
+}
+
+/* Right Section */
+.contact-us-split-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 99px;
+
+  @media (max-width: 460px) {
+    padding-bottom: 45px;
+    
+  }
+}
+
+/* Form Styling */
+.contact-us-split-form label {
+  color: #000000; /* Change to your desired text color */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  line-height: 50px;
+}
+
+.contact-us-transparent-input::placeholder {
+  color: #a7a7a7;
+}
+
+.contact-us-btn-custom {
+  background-color: #182d70;
+  border: 0px solid #182d70;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.contact-us-split-form input {
+  width: 100%;
+  padding-left: 14px;
+  border-radius: 10px 10px 10px 10px;
+  border-color: #d3d3d3;
+  min-height: 50px;
+  border: 1px solid #a7a7a7;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding-left: 14px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid  #a7a7a7;
+}
+
+@media (max-width: 768px) {
+  .contact-us-arrange {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

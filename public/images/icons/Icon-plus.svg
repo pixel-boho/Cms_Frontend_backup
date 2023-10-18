@@ -1,0 +1,24 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Icon_Background_Mask_" data-name="Icon (Background/Mask)" class="cls-1" width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <rect id="Icon_Background_Mask_2" data-name="Icon (Background/Mask)" class="cls-1" width="32" height="32"/>
+  <g id="Icon-2" data-name="Icon" class="cls-2">
+    <path id="Vector" class="cls-3" d="M23.707,12.707A1,1,0,0,1,23,13H13V23a1,1,0,1,1-2,0V13H1a1,1,0,1,1,0-2H11V1a1,1,0,1,1,2,0V11H23a1,1,0,0,1,.707,1.707Z" transform="translate(4 4)"/>
+  </g>
+</svg>

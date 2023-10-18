@@ -1,0 +1,245 @@
+.about-story-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+.about-story-left,
+.about-story-right {
+  background-size: cover;
+}
+
+.about-story-left {
+  background-image: url("../../images/AboutStory/About-sty.jpg");
+}
+
+.about-story-right {
+  background-image: url("../../images/AboutStory/spare-trans.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.about-story-head {
+  padding-top: 120px;
+}
+
+.about-story-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.about-story-bi {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.about-story-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+@media (min-width: 300px) and (max-width: 320px) {
+  .about-story-left,
+  .about-story-right {
+    background-size: cover;
+  }
+  
+  .about-story-left {
+    background-image: url("../../images/AboutStory/About-sty.jpg");
+    height: 300px;
+  }
+  
+  .about-story-right {
+    background-image: url("../../images/AboutStory/spare-trans.png");
+    height: 900px;
+  }
+  
+  .about-story-head {
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .about-story-parag p{
+    padding-top: 0;
+    font-size: 13px;
+    text-align:left;
+  }
+}
+/* Media Query for 321px to 480px */
+@media (max-width: 480px) {
+ .about-story-left,
+  .about-story-right {
+    background-size: cover;
+  }
+  
+  .about-story-left {
+    background-image: url("../../images/AboutStory/About-sty.jpg");
+    height: 300px;
+  }
+  
+  .about-story-right {
+    background-image: url("../../images/AboutStory/spare-trans.png");
+    height: 750px;
+  }
+  
+  .about-story-head {
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .about-story-parag p{
+    padding-top: 0;
+    font-size: 13px;
+    text-align:left;
+  }
+}
+
+/* Media Query for 481px to 600px */
+@media (min-width: 481px) and (max-width: 600px) {
+  .about-story-left,
+  .about-story-right {
+    background-size: cover;
+  }
+  
+  .about-story-left {
+    background-image: url("../../images/AboutStory/About-sty.jpg");
+    height: 350px;
+  }
+  
+  .about-story-right {
+    background-image: url("../../images/AboutStory/spare-trans.png");
+    height: 580px;
+  }
+  
+  .about-story-head {
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .about-story-parag p{
+    padding-top: 0;
+    font-size: 13px;
+    text-align:left;
+  }
+}
+
+/* Media Query for 601px to 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+  .about-story-left,
+  .about-story-right {
+    background-size: cover;
+  }
+  
+  .about-story-left {
+    background-image: url("../../images/AboutStory/About-sty.jpg");
+    height: 400px;
+  }
+  
+  .about-story-right {
+    background-image: url("../../images/AboutStory/spare-trans.png");
+    height: 530px;
+  }
+  
+  .about-story-head {
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .about-story-parag p{
+    padding-top: 0;
+    font-size: 13px;
+    text-align:left;
+  }
+}
+
+/* Media Query for 769px to 900px */
+@media (min-width: 769px) and (max-width: 900px) {
+  .about-story-left,
+  .about-story-right {
+    background-size: cover;
+  }
+  
+  .about-story-left {
+    background-image: url("../../images/AboutStory/About-sty.jpg");
+    height:480px;
+  }
+  
+  .about-story-right {
+    background-image: url("../../images/AboutStory/spare-trans.png");
+    height: 470px;
+  }
+  
+  .about-story-head {
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .about-story-parag p{
+    padding-top: 0;
+    font-size: 13px;
+    text-align:left;
+  }
+}
+
+/* Media Query for 901px to 1024px */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .about-story-left,
+  .about-story-right {
+    background-size: cover;
+  }
+  
+  .about-story-left {
+    background-image: url("../../images/AboutStory/About-sty.jpg");
+    height:620px;
+  }
+  
+  .about-story-right {
+    background-image: url("../../images/AboutStory/spare-trans.png");
+    height: 620px;
+  }
+  
+  .about-story-head {
+    padding-top: 15px;
+    text-align: left;
+  }
+  
+  .about-story-parag p{
+    padding-top: 0;
+    font-size: 13px;
+    text-align:left;
+  }
+}
+
+/* Media Query for 1025px to 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .about-story-left,
+  .about-story-right {
+    background-size: cover;
+  }
+  
+  .about-story-left {
+    background-image: url("../../images/AboutStory/About-sty.jpg");
+    height:620px;
+  }
+  
+  .about-story-right {
+    background-image: url("../../images/AboutStory/spare-trans.png");
+    height: 620px;
+  }
+  
+  .about-story-head {
+    padding-top: 15px;
+    text-align: left;
+  }
+  
+  .about-story-parag p{
+    padding-top: 0;
+    font-size: 13px;
+    text-align:left;
+  }
+}

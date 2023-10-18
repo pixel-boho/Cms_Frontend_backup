@@ -1,0 +1,158 @@
+.ind-mfg-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0 30px 0px;
+}
+
+.ind-mfg-left,
+.ind-mfg-right {
+  background-size: cover;
+  height: 700px;
+}
+
+.ind-mfg-left {
+  background-image: url("../../images/Ind-mfg/mfg.png");
+}
+
+.ind-mfg-right {
+  background-image: url("../../images/Ind-mfg/mfg-bg.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.ind-mfg-head {
+  padding-top: 120px;
+}
+
+.ind-mfg-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.ind-mfg-bi {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.ind-mfg-parag-one {
+  padding-top: 20px;
+}
+
+.ind-mfg-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.ind-mfg-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px;
+  }
+}
+
+.ind-mfg-left {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+}
+
+.ind-mfg-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.ind-mfg-head {
+  padding-top: 120px;
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.ind-mfg-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding-top: 10px; /* Adjust font size for smaller screens */
+  }
+}
+
+.ind-mfg-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.ind-mfg-parag-one {
+  padding-top: 20px;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.ind-mfg-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+@media (max-width: 460px) {
+  .ind-mfg-right{
+    height: auto;
+  }
+  
+  .ind-mfg-left {
+  background-size: cover;
+  height: 300px;
+  }
+  
+  .ind-mfg-parag-one {
+  padding-top: 0px;
+  }
+  .ind-mfg-head {
+  padding-top: 20px;
+  }
+  
+  .ind-mfg-parag {
+  padding-top: 5px;
+  font-size: 16px;
+  text-align: justify;
+  }
+  }

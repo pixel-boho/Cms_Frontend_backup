@@ -1,0 +1,380 @@
+.milestones-head {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.milestones-parag {
+  font-size: 35px;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 90px;
+}
+
+.scroll-milestone {
+  position: relative;
+  height: 700px;
+  padding-top: 130px;
+  overflow: hidden;
+}
+
+.scroll-milestone-main{
+  padding-bottom: 80px;
+}
+
+ .background-container {
+  display: flex; 
+  width: 92%; 
+   animation: scrollBackground 30s linear infinite; 
+}
+
+@media (max-width: 460px) {
+  .background-container {
+    width: 620%; 
+     animation: scrollBackground 45s linear infinite; 
+  }
+
+  @keyframes scrollBackground {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@keyframes scrollBackground {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.background-container:hover {
+  display: flex; 
+  width: 200%;
+  animation: scrollBackground 0s linear infinite; 
+}
+
+.background-image-milestone {
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  height: 500px;
+  width: auto;
+}
+
+/* 2008 */
+.scroll-image {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(58px) translateX(95px);
+}
+
+/* 2010 */
+
+.scroll-image-1 {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(193px) translateX(341px);
+}
+
+/* 2011 */
+.scroll-image-2 {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(58px) translateX(588px);
+}
+
+/* 2013 */
+
+.scroll-image-3 {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(193px) translateX(835px);
+}
+
+/* 2013 */
+
+.scroll-image-4 {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(58px) translateX(1081px);
+}
+
+
+
+.scroll-image-5 {
+  min-height: 10px !important;
+  width: 258px;
+  position: absolute;
+  transform: translateY(208px) translateX(1321px);
+}
+
+/* 2017 */
+
+.scroll-image-6 {
+  min-height: 10px !important;
+  width: 260px;
+  position: absolute;
+  transform: translateY(73px) translateX(1567px);
+}
+
+/* 2019 */
+
+.scroll-image-7 {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(210px) translateX(1813px);
+}
+
+/* 2022 */
+
+.scroll-image-8 {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(72px) translateX(2060px);
+}
+
+/* 2021 */
+
+.scroll-image-9 {
+  min-height: 10px !important;
+  width: 261px;
+  position: absolute;
+  transform: translateY(210px) translateX(2304px);
+}
+
+
+.inside-box-text {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: black;
+  text-align: center;
+  transform: translateY(143px) translateX(173px);
+}
+
+.inside-box-text-1 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(279px) translateX(405px);
+}
+
+.inside-box-text-2 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #000000;
+  text-align: center;
+  transform: translateY(152px) translateX(655px);
+}
+
+
+.inside-box-text-3 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(275px) translateX(874px);
+}
+
+.inside-box-text-4 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #000000;
+  text-align: center;
+  transform: translateY(150px) translateX(1135px);
+}
+
+.inside-box-text-5 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(290px) translateX(1378px);
+}
+
+.inside-box-text-6 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #000000;
+  text-align: center;
+  transform: translateY(155px) translateX(1639px);
+}
+
+.inside-box-text-7 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(282px) translateX(1870px);
+}
+
+.inside-box-text-8 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #000000;
+  text-align: center;
+  transform: translateY(155px) translateX(2114px);
+}
+
+.inside-box-text-9 {
+  position: absolute;
+  font-size: 15px;
+  z-index: 5;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(284px) translateX(2360px);
+}
+
+.milestone-exp-pnt{
+  color: black;
+  position: absolute;
+  transform: translateY(510px) translateX(90px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-one{
+  color: black;
+  position: absolute;
+  transform: translateY(-70px) translateX(348px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-one p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-two{
+  color: black;
+  position: absolute;
+  transform: translateY(510px) translateX(500px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-two p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-three{
+  color: black;
+  position: absolute;
+  transform: translateY(-35px) translateX(838px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-three p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-four{
+  color: black;
+  position: absolute;
+  transform: translateY(510px) translateX(1050px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-four p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-five{
+  color: black;
+  position: absolute;
+  transform: translateY(-70px) translateX(1305px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-five p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-six{
+  color: black;
+  position: absolute;
+  transform: translateY(510px) translateX(1500px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-six p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-seven{
+  color: black;
+  position: absolute;
+  transform: translateY(-100px) translateX(1705px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-seven p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-eight{
+  color: black;
+  position: absolute;
+  transform: translateY(510px) translateX(1988px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-eight p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-seven{
+  color: black;
+  position: absolute;
+  transform: translateY(-100px) translateX(1705px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-seven p{
+  font-size: 14px;
+}
+
+.milestone-exp-pnt-nine{
+  color: black;
+  position: absolute;
+  transform: translateY(-70px) translateX(2268px);
+  z-index: 20;
+  font-size: 15px;
+}
+
+.milestone-exp-pnt-nine p{
+  font-size: 12px;
+}

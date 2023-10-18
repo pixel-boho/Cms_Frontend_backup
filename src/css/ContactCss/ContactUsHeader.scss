@@ -1,0 +1,111 @@
+.contact-us-nav-bg {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/Contact-us/contact-us-group.png");
+  background-position: center;
+}
+
+.contact-us-quote {
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 0;
+}
+.contact-us-quote-img img {
+  width: 50px;
+  padding-top: 150px;
+  position: fixed;
+  justify-content: right;
+  right: 0;
+}
+
+.contact-us-text {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 180px;
+}
+
+
+/* Media Query*/
+
+@media (min-width: 280px) and (max-width: 320px){
+  .contact-us-quote-img img {
+    width: 28px;
+    padding-top: 150px;
+    position: fixed;
+    right: 0;
+  }
+
+  .contact-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 180px;
+  }
+}
+
+
+@media (min-width: 321px) and (max-width: 480px){
+  .contact-us-quote-img img {
+    width: 28px;
+    padding-top: 160px;
+    position: fixed;
+    right: 0;
+  }
+
+  .contact-us-text {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 180px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .contact-us-quote-img img {
+    width: 30px;
+    padding-top: 160px;
+    position: fixed;
+    right: 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .contact-us-quote-img img {
+    width: 35px;
+    padding-top: 160px;
+    position: fixed;
+    right: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .contact-us-quote-img img {
+    width: 35px;
+    padding-top: 160px;
+    position: fixed;
+    right: 0;
+  }
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .contact-us-quote-img img {
+    width: 35px;
+    padding-top: 160px;
+    position: fixed;
+    right: 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .contact-us-quote-img img {
+    width: 35px;
+    padding-top: 160px;
+    position: fixed;
+    right: 0;
+  }
+}

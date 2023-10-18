@@ -1,0 +1,33 @@
+.blog-mu-main-size{
+    padding: 2% 15% 2% 15%;
+}
+.blog-mu-main-pads{
+  padding-bottom: 40px;
+}
+
+.blog-mu-custom-card {
+    border: none;
+    width: 95%;
+    margin: 0 auto; 
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+  }
+
+  .blog-mu-custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+  
+  .blog-mu-card-img-top {
+    padding: 25px;
+  }
+  
+  .blog-mu-card-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .blog-mu-card-text p {
+    font-size: 1rem;
+  }
+   

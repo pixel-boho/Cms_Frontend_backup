@@ -1,0 +1,177 @@
+.civil-def-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+.civil-def-left,
+.civil-def-right {
+  background-size: cover;
+  height: 750px;
+}
+
+.civil-def-left {
+  background-image: url("../../images/CivilDefenseTransportation/civil-bg.png");
+}
+
+.civil-def-right {
+  background-image: url("../../images/CivilDefenseTransportation/spare-trans.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.civil-def-head {
+  padding-top: 120px;
+}
+
+.civil-def-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.civil-def-bi {
+  padding-left: 15px;
+  font-size: 30px;
+  width: 52px;
+}
+
+.civil-def-parag-one {
+  padding-top: 20px;
+}
+
+.civil-def-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.civil-def-learn:hover {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.civil-def-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px;
+  }
+}
+
+.civil-def-left {
+  background-size: cover;
+  height: 750px;
+
+  @media (max-width: 768px) {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+}
+
+.civil-def-right {
+  background-size: cover;
+  height: 750px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  @media (max-width: 460px) {
+    height: auto;
+  }
+}
+/* Add a class to trigger the animation */
+.civil-def-start.zoom-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.civil-def-head {
+  padding-top: 120px;
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.civil-def-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding-top: 10px; /* Adjust font size for smaller screens */
+  }
+}
+
+.civil-def-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.civil-def-parag-one {
+  padding-top: 20px;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.civil-def-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 460px) {
+  .civil-def-right{
+    height: auto;
+  }
+  .ship-civil-def-start {
+    width: 90%; /* Set the container width to 80% */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 30px 0;
+  }
+  .civil-def-left {
+  background-size: cover;
+  height: 300px;
+}
+
+.civil-def-parag-one {
+  padding-top: 0px;
+}
+.civil-def-head {
+  padding-top: 20px;
+}
+
+.civil-def-parag {
+  padding-top: 5px;
+  font-size: 16px;
+  text-align: justify;
+}
+}

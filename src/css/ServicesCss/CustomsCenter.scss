@@ -1,0 +1,162 @@
+.careers-firs{
+  width: 90%;
+}
+
+blockquote {
+  font-weight: bold; /* Make the text bold */
+  font-size: 19px;
+  background-color: rgb(239, 239, 239); /* Set the background color */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-family: Arial, sans-serif; /* Choose your preferred font */
+  text-align: center; /* Center the text horizontally */
+  padding: 40px;
+  width: 95%;
+}
+blockquote:before {
+  content: open-quote; /* Display the left quotation mark before the blockquote */
+}
+blockquote:after {
+  content: close-quote; /* Display the right quotation mark after the blockquote */
+}
+
+.centered-get-quotes-font {
+  width: 20%;
+}
+
+.centered-clr-text {
+  font-size: 14px;
+  padding-top: 12px;
+  padding-right: 30px;
+}
+
+.centered-clr-text h2{
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.blog-compliance{
+  padding-top: 12px;
+}
+
+.bi-blog-compliance {
+  font-size: 25px; 
+}
+
+.blog-compliance-p {
+  display: inline;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.centered-clr-head {
+  padding-top: 35px;
+}
+.centered-clr-head-bottom {
+  padding-top: 8px;
+  padding-bottom: 25px;
+}
+
+.recent-top-pad {
+  padding-left: 23px;
+}
+
+.recent-image-pad{
+  width: 100%;
+  padding: 30px;
+}
+
+
+.customs-center-bg {
+  width: 95%;
+  padding-top: 18px;
+}
+
+.customs-center-bg-txt{
+  padding-top: 20px;
+  width: 100%;
+}
+
+//next section
+.recent-clr-bg {
+  background-color: rgb(239, 239, 239);
+  padding-bottom: 40px;
+  width: 520px;
+}
+
+.link-quote-font {
+  padding-bottom: 20px;
+  padding-top: 35px;
+  }
+
+
+@media (max-width: 460px){
+  .recent-clr-bg {
+    padding-bottom: 40px;
+    width: 420px;
+  }
+  
+  .centered-get-quotes-font {
+    padding-bottom: 20px;
+  }
+  
+  .custom-clr-text-nav-pad {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.customs-center-bg {
+  width: 93%;
+}
+
+.recent-top-pad {
+  padding-left: 14px;
+
+}
+
+.link-quote-font {
+text-align: center ;
+padding-bottom: 20px;
+padding-top: 10px;
+}
+}
+
+.centered-get-quotes-font {
+  background-color: #2044A2;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  border: 0px solid  #2044A2;
+
+}
+
+
+.recent-image-pad {
+  padding-top: 20px;
+}
+
+.recent-head {
+  padding-top: 30px;
+  padding-left: 29px;
+}
+.recent-parag {
+  font-size: 12px;
+  width: 80%;
+  padding-left: 29px;
+}
+.recent-head-one {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 29px;
+  font-weight: 600;
+}
+
+.recent-read {
+  color: #1a2e73;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 25px;
+  padding-left: 29px;
+}

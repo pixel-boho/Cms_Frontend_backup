@@ -1,0 +1,158 @@
+.event-log-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+@media (max-width:460px) {
+  .event-log-start .row {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of elements */
+  }
+}
+
+.event-log-left,
+.event-log-right {
+  background-size: cover;
+  height: 750px;
+}
+
+.event-log-left {
+  background-image: url("../../images/EventLogistics/event-log-bg.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.event-log-head {
+  padding-top: 120px;
+  color: black;
+}
+
+.event-log-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
+
+.event-log-bi {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.event-log-parag-one {
+  padding-top: 20px;
+  color: black;
+}
+
+.event-log-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.event-log-learn:hover {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+.event-log-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px;
+  }
+}
+
+.event-log-left,
+.event-log-right {
+  background-size: cover;
+  height: 750px;
+
+  @media (max-width: 768px) {
+    height: 470px; /* Adjust height for smaller screens */
+  }
+}
+
+.event-log-left {
+  background-size: cover;
+  height: 750px;
+
+  @media (max-width: 768px) {
+    height: 350px;
+  }
+}
+
+.event-log-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.event-log-head {
+  padding-top: 120px;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.event-log-parag {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+.event-log-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.event-log-parag-one {
+  padding-top: 20px;
+  color: black;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.event-log-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}

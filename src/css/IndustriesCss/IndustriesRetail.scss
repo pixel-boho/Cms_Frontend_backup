@@ -1,0 +1,179 @@
+.retails-def-start {
+  width: 90%; /* Set the container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 0;
+}
+
+.retails-def-left,
+.retails-def-right {
+  background-size: cover;
+  height: 700px;
+}
+
+.retails-def-left {
+  background-image: url("../../images/Ind-Retail/Retail.png");
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+}
+
+.retails-def-head {
+  padding-top: 120px;
+  color: rgb(0, 0, 0);
+}
+
+.retails-def-parag {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
+
+.retails-def-bi {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.retails-def-parag-one {
+  padding-top: 20px;
+  color: black;
+}
+
+.retails-def-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.retails-def-start {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px;
+  }
+}
+
+.retails-def-left,
+.retails-def-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+.retails-def-left {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: 350px;
+  }
+}
+
+.retails-def-right {
+  background-size: cover;
+  height: 700px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  @media (max-width: 460px) {
+    height: auto;
+  }
+}
+
+.retails-def-start .row {
+  @media (max-width: 460px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.content-overlay {
+  padding: 20px;
+  color: white;
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.retails-def-head {
+  padding-top: 120px;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 768px) {
+    padding-top: 20px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.retails-def-parag {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+.retails-def-bi {
+  padding-left: 15px;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+.retails-def-parag-one {
+  padding-top: 20px;
+  color: black;
+
+  @media (max-width: 768px) {
+    padding-top: 10px; /* Adjust padding-top for smaller screens */
+  }
+}
+
+.retails-def-learn {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+@media (max-width: 460px) {
+  .retails-def-right {
+    background-size: cover;
+    height: auto;
+  }
+
+  .retails-def-left {
+    background-size: cover;
+    height: 300px;
+  }
+
+  .retails-def-head {
+    padding-top: 20px;
+  }
+
+  .retails-def-parag {
+    padding-top: 5px;
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+  }
+  
+}
