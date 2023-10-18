@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "./../../css/Industries.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col, Card } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Industries = () => {
   const [scrollLeft, setScrollLeft] = useState(null);
@@ -36,7 +38,7 @@ const Industries = () => {
       }
     }, 5000); // Scrolls every 5 seconds
   };
-  
+
   const handleNextClick = () => {
     clearInterval(scrollIntervalRef.current); // Clear auto-scrolling interval
     const newScrollLeft = scrollLeft + cardWidth;
@@ -153,9 +155,21 @@ const Industries = () => {
 
       <div className="container-fluid indus-spacing">
         <Row className="indus-space-adjust market-page-one">
-          <div className="card-scroll-container" ref={cardScrollContainerRef}>
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={"auto"}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            navigation={false}
+            modules={[Autoplay]}
+            className="mySwiper"
+          >
             {industries.map((industry) => (
-              <Col lg key={industry.id}>
+              <SwiperSlide lg key={industry.id}>
                 <Card
                   className="card-scrollll card-indus"
                   style={{ width: "330px" }}
@@ -186,9 +200,9 @@ const Industries = () => {
                     </div>
                   </Card.Body>
                 </Card>
-              </Col>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </Row>
 
         <div className="row text-center arrow-icons-industry-lr justify-content-center d-flex">

@@ -1,101 +1,104 @@
 .chooseus-wh {
   background: url("/public/images/ChooseUs/Ship-one-bg.png");
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-width: 100%;
-height: 650px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
 }
 
-
-.chooseus-p{
-  text-align: end;
-  font-size:large;
+.chooseus-p {
+  text-align: center;
+  font-size: large;
   font-size: 25px;
   padding-bottom: 10px;
   padding-top: 200px;
 }
 
-.chooseus-h-one{
-  text-align: end;
+.chooseus-h-one {
+  text-align: center;
   font-weight: 800;
   font-size: 60px;
   padding-bottom: 1px;
 }
 
-.chooseus-h2{
+.chooseus-h2 {
   text-align: end;
   font-size: 70px;
   padding-bottom: 10px;
 }
 
-.chooseus-parag{
-  text-align: end;
+.chooseus-parag {
+  text-align: center;
   font-size: 16px;
-  padding-left: 330px;
+  display: flex;
+  justify-content: center;
+}
+.chooseus-parag p {
+  width: 75%;
 }
 
-.chooseus-read-more{
-text-decoration: none;
-font-size: 16px;
-color: black;
-font-weight:500;
+.chooseus-read-more {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
 }
 
-.chooseus-readm{
+.chooseus-readm {
   text-align: end;
   padding-top: 25px;
   display: none;
 }
 
 @media (max-width: 460px) {
-  .chooseus-wh{
-background: url("/public/images/ChooseUs/Ship-one-bg.png");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-  width: auto;
-  height: auto;
+  .chooseus-wh {
+    background: url("/public/images/ChooseUs/Ship-one-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: auto;
   }
 
-  .choose-us-main-contain{
-padding-bottom: 0
+  .choose-us-main-contain {
+    padding-bottom: 0;
   }
 
   .chooseus-p,
   .chooseus-h,
-  .chooseus-h2,A
-  .chooseus-parag,
+  .chooseus-h2,
+  A .chooseus-parag,
   .chooseus-readm {
     text-align: center;
   }
 
-  .chooseus-p{
+  .chooseus-p {
     text-align: center;
-    font-size:medium;
+    font-size: medium;
     font-size: 15px;
     padding: 10px;
   }
-  
-  .chooseus-h-one{
+
+  .chooseus-h-one {
     text-align: center;
     font-weight: 800;
     font-size: 35px;
     padding-bottom: 5px;
     padding-top: 10px;
   }
-  
+
   .chooseus-h {
     font-size: 30px;
   }
 
-  .chooseus-h2{
+  .chooseus-h2 {
     text-align: center;
     font-size: 30px;
-     padding: 0;
+    padding: 0;
   }
-  
-  .chooseus-parag{
+
+  .chooseus-parag {
     text-align: center;
     font-size: 14px;
     padding-left: 0px;
@@ -106,61 +109,54 @@ padding-bottom: 0
     padding-top: 15px;
   }
 
-  .chooseus-read-more{
+  .chooseus-read-more {
     text-decoration: none;
     font-size: 14px;
     color: black;
-    }
+  }
 }
 
 @media (max-width: 360px) {
-  .chooseus-wh{
-background: url("/public/images/ChooseUs/Ship-one-bg.png");
-background-size: fill;
-background-repeat: no-repeat;
-background-position: center;
-  width: auto;
-  height: auto;
+  .chooseus-wh {
+    background: url("/public/images/ChooseUs/Ship-one-bg.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: auto;
   }
 
-  .choose-us-main-contain{
-padding-bottom: 0;
+  .choose-us-main-contain {
+    padding-bottom: 0;
   }
 
   .chooseus-p,
   .chooseus-h,
-  .chooseus-h2,A
-  .chooseus-parag,
+  .chooseus-h2,
+  A .chooseus-parag,
   .chooseus-readm {
     text-align: center;
   }
 
-  .chooseus-p{
-    text-align: center;
-    font-size:medium;
-    font-size: 14px;
-    padding: 10px;
-  }
-  
-  .chooseus-h-one{
+  .chooseus-h-one {
     text-align: center;
     font-weight: 800;
     font-size: 35px;
     padding-bottom: 5px;
     padding-top: 10px;
   }
-  
+
   .chooseus-h {
     font-size: 40px;
   }
 
-  .chooseus-h2{
+  .chooseus-h2 {
     text-align: center;
     font-size: 35px;
-     padding: 0;
+    padding: 0;
   }
-  
-  .chooseus-parag{
+
+  .chooseus-parag {
     text-align: center;
     font-size: 14px;
     padding-left: 0px;
@@ -172,9 +168,31 @@ padding-bottom: 0;
     padding: 10px;
   }
 
-  .chooseus-read-more{
+  .chooseus-read-more {
     text-decoration: none;
     font-size: 14px;
     color: black;
-    }
+  }
+}
+
+@media (min-width: 992px) {
+  .chooseus-p {
+    text-align: end;
+    font-size: large;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 200px;
+  }
+  .chooseus-h-one {
+    text-align: end;
+    font-weight: 800;
+    font-size: 60px;
+    padding-bottom: 1px;
+  }
+  .chooseus-parag {
+    justify-content: flex-end;
+  }
+  .chooseus-parag p{
+    text-align: end;
+  }
 }
