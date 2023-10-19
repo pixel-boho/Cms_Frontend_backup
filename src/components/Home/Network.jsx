@@ -8,7 +8,7 @@ import quatarHovered from "../../images/Network/qutarhovered.png";
 import saudiHovered from "../../images/Network/saudihovered.png";
 import uae from "../../images/Network/uae03.png";
 import uaeHovered from "../../images/Network/uaehovered.png";
-import mapMask from "../../images/Network/mapmask.png";
+import mapMask from "../../images/Network/mapmasks.png";
 import { Tooltip } from "react-tooltip";
 import ReactDOMServer from "react-dom/server";
 import arrow from "../../";
@@ -22,22 +22,30 @@ function Network() {
     uae: false,
   });
   const handleMouseEnter = (event) => {
-    setIsHovered({ ...isHovered, [event.target.name]: true });
+    let initialState = {
+      oman: false,
+      saudi: false,
+      qatar: false,
+      uae: false,
+    };
+    setIsHovered({ ...initialState, [event.target.name]: true });
   };
   const handleLeave = (event) => {
-    setIsOpen(false);
-    console.log(event);
+    // setIsOpen(false);
     setIsHovered({ ...isHovered, [event.target.name]: false });
   };
 
-  const handleParentMouseLeave = (event) => {
-    if (
-      !isHovered.oman &&
-      isHovered.qatar &&
-      !isHovered.saudi &&
-      !isHovered.uae
-    ) {
+  const handleParentMouseOver = (event) => {
+    const { id } = event.target;
+    if (id === "map-container") {
+      let initialState = {
+        oman: false,
+        saudi: false,
+        qatar: false,
+        uae: false,
+      };
       setIsOpen(false);
+      setIsHovered(initialState);
     }
   };
   return (
@@ -45,26 +53,51 @@ function Network() {
       <img
         src={mapMask}
         className="position-absolute top-0 left-0"
-        style={{ height: "100%", width: "100%", opacity: ".2" }}
+        style={{ height: "100%", width: "100%" }}
         alt=""
       />
-      <div className="row">
-        <div className="col-12">
-          <h1 className="network-map-heading text-center">
+      <div className="row h-100">
+        <div className="col-12  h-100 d-flex flex-column">
+          <h1 className="network-map-heading text-center mb-5">
             Our Global Network
           </h1>
-        </div>
-        <div className="col-12 ">
-          <div className="map-container" onMouseLeave={handleParentMouseLeave}>
-            <div className="map-image-container">
-              <img
-                src={oman}
-                className="map-image oman"
-                name="oman"
-                alt=""
-                onMouseEnter={handleMouseEnter}
-              />
 
+          <div
+            className="map-container"
+            id="map-container"
+            onMouseOver={handleParentMouseOver}
+          >
+            <img
+              src={oman}
+              className={` map-image oman`}
+              name="oman"
+              alt=""
+              onMouseEnter={handleMouseEnter}
+              data-tooltip-id="my-tooltip"
+              data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
+                <div className="" name="oman" onMouseEnter={() => alert()}>
+                  <h3 className="fw-bold">ALSI Oman</h3>
+                  <p className="display-7 mb-2" style={{ fontSize: "12px" }}>
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt
+                  </p>
+                  <a
+                    href="/r"
+                    className="btn d-flex align-items-center fw-bold"
+                    style={{ fontSize: "12px" }}
+                  >
+                    Get Direction
+                    <img
+                      src="/images/select-arrow.png"
+                      width="30px"
+                      className="ms-3"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              )}
+            />
+            {isHovered.oman && (
               <img
                 src={omanHovered}
                 className="map-image oman map-oman-hovered"
@@ -72,45 +105,14 @@ function Network() {
                 name="oman"
                 onMouseEnter={() => setIsOpen(true)}
                 // onMouseOver={() => setIsOpen(true)}
-                onMouseLeave={handleLeave}
-                data-tooltip-id="my-tooltip"
-                data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
-                  <div className="">
-                    <h3 className="fw-bold">ALSI Oman</h3>
-                    <p className="display-7 mb-2" style={{ fontSize: "12px" }}>
-                      lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt
-                    </p>
-                    <a
-                      href="/r"
-                      className="btn d-flex align-items-center"
-                      style={{ fontSize: "12px" }}
-                    >
-                      Get Direction
-                      <img
-                        src="/images/select-arrow.png"
-                        width="30px"
-                        className="ms-3"
-                        alt=""
-                      />{" "}
-                    </a>
-                  </div>
-                )}
               />
-            </div>
+            )}
             <div>
               <img
                 src={uae}
                 className="map-image uae"
-                onMouseEnter={() => setIsOpen(true)}
-                // onMouseLeave={() => setIsOpen(false)}
-                alt=""
-              />
-              <img
-                src={uaeHovered}
-                className="map-image uae map-uae-hovered"
-                onMouseEnter={() => setIsOpen(true)}
-                // onMouseLeave={() => setIsOpen(false)}
+                name="uae"
+                onMouseEnter={handleMouseEnter}
                 alt=""
                 data-tooltip-id="my-tooltip"
                 data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
@@ -120,24 +122,39 @@ function Network() {
                       lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt
                     </p>
+                    <a
+                      href="/r"
+                      className="btn d-flex align-items-center fw-bold"
+                      style={{ fontSize: "12px" }}
+                    >
+                      Get Direction
+                      <img
+                        src="/images/select-arrow.png"
+                        width="30px"
+                        className="ms-3"
+                        alt=""
+                      />
+                    </a>
                   </div>
                 )}
               />
+              {isHovered.uae && (
+                <img
+                  src={uaeHovered}
+                  name="uae"
+                  className="map-image uae map-uae-hovered"
+                  onMouseEnter={() => setIsOpen(true)}
+                  alt=""
+                />
+              )}
             </div>
             <div>
               <img
                 src={saudi}
                 className="map-image saudi"
+                name="saudi"
                 alt=""
-                onMouseEnter={() => setIsOpen(true)}
-                // onMouseLeave={() => setIsOpen(false)}
-              />
-              <img
-                src={saudiHovered}
-                alt=""
-                onMouseEnter={() => setIsOpen(true)}
-                // onMouseLeave={() => setIsOpen(false)}
-                className="map-image saudi map-saudi-hovered "
+                onMouseEnter={handleMouseEnter}
                 data-tooltip-id="my-tooltip"
                 data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
                   <div className="">
@@ -146,24 +163,39 @@ function Network() {
                       lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt
                     </p>
+                    <a
+                      href="/r"
+                      className="btn d-flex align-items-center fw-bold"
+                      style={{ fontSize: "12px" }}
+                    >
+                      Get Direction
+                      <img
+                        src="/images/select-arrow.png"
+                        width="30px"
+                        className="ms-3"
+                        alt=""
+                      />
+                    </a>
                   </div>
                 )}
               />
+              {isHovered.saudi && (
+                <img
+                  src={saudiHovered}
+                  alt=""
+                  onMouseEnter={() => setIsOpen(true)}
+                  // onMouseLeave={() => setIsOpen(false)}
+                  className="map-image saudi map-saudi-hovered "
+                />
+              )}
             </div>
             <div>
               <img
                 src={quatar}
                 className="map-image quatar"
                 alt=""
-                onMouseEnter={() => setIsOpen(true)}
-                // onMouseLeave={() => setIsOpen(false)}
-              />
-              <img
-                src={quatarHovered}
-                alt=""
-                onMouseEnter={() => setIsOpen(true)}
-                // onMouseLeave={() => setIsOpen(false)}
-                className="map-image quatar map-quatar-hovered"
+                name="qatar"
+                onMouseEnter={handleMouseEnter}
                 data-tooltip-id="my-tooltip"
                 data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
                   <div className="">
@@ -172,9 +204,31 @@ function Network() {
                       lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt
                     </p>
+                    <a
+                      href="/r"
+                      className="btn d-flex align-items-center fw-bold"
+                      style={{ fontSize: "12px" }}
+                    >
+                      Get Direction
+                      <img
+                        src="/images/select-arrow.png"
+                        width="30px"
+                        className="ms-3"
+                        alt=""
+                      />
+                    </a>
                   </div>
                 )}
               />
+              {isHovered.qatar && (
+                <img
+                  src={quatarHovered}
+                  alt=""
+                  onMouseEnter={() => setIsOpen(true)}
+                  // onMouseLeave={() => setIsOpen(false)}
+                  className="map-image quatar map-quatar-hovered"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -189,6 +243,7 @@ function Network() {
           maxWidth: "200px",
           zIndex: "9999",
         }}
+        offset={-10}
         isOpen={isOpen}
         clickable={true}
       />
