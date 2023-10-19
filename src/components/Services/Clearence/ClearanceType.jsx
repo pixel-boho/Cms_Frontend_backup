@@ -7,10 +7,7 @@ function ClearanceType() {
   return (
     <>
       <Container fluid className="container-cc-type-serv">
-        <h3 className="main-title-cc-type-serv">
-          Customs <br />
-          Clearance Services
-        </h3>
+        <h3 className="main-title-cc-type-serv">Customs Clearance Services</h3>
         <img
           className="bg-main-img"
           src="images/CargoService/cargo-mixed.png"
@@ -18,7 +15,7 @@ function ClearanceType() {
         />
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/GeneralGoodsClearance.jpg"
                 className="cc-type-serv-general"
@@ -30,7 +27,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/OceanFreight/DangerousGoods.jpg"
                 className="cc-type-serv-general"
@@ -42,7 +39,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/HealthandMedicalGoodsClearance.jpg"
                 className="cc-type-serv-general"
@@ -56,7 +53,7 @@ function ClearanceType() {
         </Row>
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/LivestockClearance.jpg"
                 className="cc-type-serv-general"
@@ -72,7 +69,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/TemporaryImportandExportClearance.jpg"
                 className="cc-type-serv-general"
@@ -84,7 +81,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/FreeZoneClearance.jpg"
                 className="cc-type-serv-general"
@@ -110,7 +107,7 @@ function ClearanceType() {
         />
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/FreeTradeAgreement(FTA)Clearance.jpg"
                 className="cc-type-serv-general"
@@ -122,7 +119,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/DutyExemptionClearance.jpg"
                 className="cc-type-serv-general"
@@ -134,7 +131,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/TransitClearance.jpg"
                 className="cc-type-serv-general"
@@ -152,7 +149,7 @@ function ClearanceType() {
         </Row>
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/On-BoardCourierClearance.jpg"
                 className="cc-type-serv-general"
@@ -169,7 +166,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/Cross-Border.jpg"
                 className="cc-type-serv-general"
@@ -185,7 +182,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/PerishablesandTemperatureControlledCargoClearance.jpg"
                 className="cc-type-serv-general"
@@ -209,7 +206,7 @@ function ClearanceType() {
         />
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/Servicestoobtainpermits.jpg"
                 className="cc-type-serv-general"
@@ -226,7 +223,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/DocumentationServicesObtainingCertificateofOrigin,LegalisationandAttestation.jpg"
                 className="cc-type-serv-general"
@@ -241,7 +238,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/SupportandAdvisory.jpg"
                 className="cc-type-serv-general"
@@ -258,7 +255,7 @@ function ClearanceType() {
         </Row>
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/DutyDepositRefundProcessing.jpg"
                 className="cc-type-serv-general"
@@ -275,7 +272,7 @@ function ClearanceType() {
       <Container fluid className="container-cc-type-serv">
         <h3 className="main-title-cc-type-serv">
           Locations We Provide Customs Clearance
-          <br /> Services in Oman
+           Services in Oman
         </h3>
         <img
           className="bg-main-img-three"
@@ -284,7 +281,7 @@ function ClearanceType() {
         />
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/MuscatAirport.jpg"
                 className="cc-type-serv-general"
@@ -300,7 +297,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/SoharPortandFreeZone.jpg"
                 className="cc-type-serv-general"
@@ -312,7 +309,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/WajajahBorder.jpg"
                 className="cc-type-serv-general"
@@ -326,7 +323,7 @@ function ClearanceType() {
         </Row>
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/WadiJizziBorder.jpg"
                 className="cc-type-serv-general"
@@ -342,7 +339,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/DuqmPort.jpg"
                 className="cc-type-serv-general"
@@ -358,7 +355,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/SalalahPortandFreeZone.jpg"
                 className="cc-type-serv-general"
@@ -375,7 +372,7 @@ function ClearanceType() {
       <Container fluid className="container-cc-type-serv">
         <h3 className="main-title-cc-type-serv">
           Locations We Provice Customs Clearance
-          <br /> Service in UAE
+           Service in UAE
         </h3>
         <img
           className="bg-main-img-four"
@@ -384,7 +381,7 @@ function ClearanceType() {
         />
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/JebelAliPortandFreeZone.jpg"
                 className="cc-type-serv-general"
@@ -396,7 +393,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/SharjahPort.jpg"
                 className="cc-type-serv-general"
@@ -412,7 +409,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/DubaiAirportandFreeZone.jpg"
                 className="cc-type-serv-general"
@@ -426,7 +423,7 @@ function ClearanceType() {
         </Row>
         <Row className="card-cc-type-serv">
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/SharjahAirportandFreeZone.jpg"
                 className="cc-type-serv-general"
@@ -438,7 +435,7 @@ function ClearanceType() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="card-child">
+            <Card className="card-child-service">
               <Card.Img
                 src="images/Clearance/HattaBorder.jpg"
                 className="cc-type-serv-general"

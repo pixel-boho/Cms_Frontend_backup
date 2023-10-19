@@ -99,40 +99,6 @@ const Services = () => {
                   </span>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="card card-med">
-                  <div className="car-img">
-                    <img
-                      src="./images/Services/custom.png"
-                      className="img-card-serve"
-                      alt="img"
-                      draggable="false"
-                    />
-                  </div>
-                  <h2 className="car-heading-custom">
-                    <Link
-                      to="/customs_clearance"
-                      style={{ color: "#193579", textDecoration: "none" }}
-                    >
-                      Customs Clearance
-                    </Link>
-                  </h2>
-                  <span className="car-c-parag">
-                    <a
-                      href="/customs_clearance"
-                      style={{ color: "#6a6d78", textDecoration: "none" }}
-                    >
-                      Streamlined customs clearance for swift and compliant
-                      international trade, reducing delays and ensuring smooth
-                      global transactions.
-                    </a>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                  </span>
-                </div>
-              </SwiperSlide>
 
               {/* Add more card entries for other services as needed */}
               <SwiperSlide>
@@ -338,8 +304,6 @@ const Services = () => {
                   </span>
                 </div>
               </SwiperSlide>
-              <SwiperSlide></SwiperSlide>
-              <SwiperSlide></SwiperSlide>
               <div className="arrows-service">
                 <div className="col-lg-12 ">
                   <div className="col-lg d-flex justify-content-center">
