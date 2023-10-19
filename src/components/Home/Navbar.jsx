@@ -18,10 +18,6 @@ const sidemenuLink = "#fff";
 const sidemenuFooter = "#2044A2";
 
 const Burger = styled.button`
-  position: absolute;
-  top: 1.1rem;
-  right: 6rem;
-  width: 45px;
   background: none;
   border: none;
   outline: none;
@@ -41,7 +37,7 @@ const Burger = styled.button`
   span {
     position: relative;
     height: ${burgerLine};
-    width: 100%;
+    width: 40px;
     background: ${burgerColor};
     display: inline-block;
     transition: all 0.5s ease;
@@ -80,7 +76,7 @@ const Burger = styled.button`
         left: 15px;
         top: -28px;
       }
-    
+
       @media (max-width: 360px) {
         left: 15px;
         top: -28px;
@@ -98,7 +94,7 @@ const Burger = styled.button`
         left: 15px;
         top: -20px;
       }
-    
+
       @media (max-width: 360px) {
         left: 15px;
         top: -20px;
@@ -149,7 +145,7 @@ const Sidemenu = styled.div`
         @media (max-width: 768px) {
           font-size: 14px;
         }
-      
+
         @media (max-width: 360px) {
           font-size: 14px;
         }
@@ -185,9 +181,9 @@ const Sidemenu = styled.div`
 
 const NavbarContainer = styled.nav`
   background: transparent;
-  top: 0;
+  max-width: 95%;
+  margin:0 auto;
   width: 100%;
-  justify-content: space-between;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -195,26 +191,20 @@ const NavbarContainer = styled.nav`
 
   @media (max-width: 460px) {
     max-width: 100%;
-    padding-left: 12px;
   }
 `;
 
 const LogoImage = styled.img`
-  max-width: 95%;
+  width: 70px;
   height: auto;
-  margin-left: 63px;
   z-index: 5;
 
   @media (max-width: 768px) {
     max-width: 50%;
-    margin-left: 5px;
-    position: absolute;
-    top: 40;
   }
 
   @media (max-width: 360px) {
     max-width: 13%;
-    margin-left: 5px;
   }
 `;
 
@@ -321,7 +311,7 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <NavbarContainer className="navbar sticky">
-        <div className="container-fluid">
+        <div className="w-100 px-4 d-flex justify-content-between align-items-center">
           <Link to="/" className="navbar-brand" style={{ zIndex: "15" }}>
             <LogoImage src="images/nav_logo.png" alt="Logo" />
           </Link>

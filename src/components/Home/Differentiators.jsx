@@ -63,7 +63,7 @@ const Differentiators = (props) => {
   const secondRowItems = items.slice(5, 10);
 
   return (
-    <div className="container diffs-containers">
+    <div className="container diffs-containers" style={{marginBottom:"100px"}}>
       <div className="row text-center">
         <p className="feature-text pt-4"></p>
         <h1 className="differentiators-header">Key Differentiators</h1>

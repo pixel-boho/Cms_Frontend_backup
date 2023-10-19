@@ -27,69 +27,73 @@ const Form = (props) => {
             </h3>
           </div>
         ) : (
-          <div className="split-form">
-            <h2>How can</h2>
-            <h4 className="split-first-head">We Help You?</h4>
-            <form className="form-market" onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <label htmlFor="name" className="form-label">
-                  Name*
-                </label>
-                <input
-                  type="text"
-                  className="form-control transparent-input"
-                  id="name"
-                  name="name"
-                  style={{ color: "white" }}
-                  placeholder="Enter first and last name"
-                  required
-                />
+          <div className="split-form" style={{ padding: "35px" }}>
+            <div className="form-container">
+              <div className="w-100">
+                <h2>How can</h2>
+                <h4 className="text-white sub-title">We Help You?</h4>
               </div>
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email*
-                </label>
-                <input
-                  type="email"
-                  className="form-control transparent-input"
-                  id="email"
-                  name="email"
-                  style={{ color: "white" }}
-                  placeholder="Eg. youremail@email.com"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="phonenumber" className="form-label">
-                  Phone Number*
-                </label>
-                <input
-                  type="text"
-                  className="form-control transparent-input"
-                  id="phonenumber"
-                  name="phonenumber"
-                  style={{ color: "white" }}
-                  placeholder="Enter 10-digit mobile number"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">
-                  Message*
-                </label>
-                <textarea
-                  style={{ minHeight: "150px", color: "white" }}
-                  className="form-control transparent-input"
-                  id="message"
-                  name="message"
-                  required
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary btn-custom">
-                Get A Quote
-              </button>
-            </form>
+              <form className="form-market" onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <label htmlFor="name" className="form-label">
+                    Name*
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control transparent-input"
+                    id="name"
+                    name="name"
+                    style={{ color: "white" }}
+                    placeholder="Enter first and last name"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label">
+                    Email*
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control transparent-input"
+                    id="email"
+                    name="email"
+                    style={{ color: "white" }}
+                    placeholder="Eg. youremail@email.com"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="phonenumber" className="form-label">
+                    Phone Number*
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control transparent-input"
+                    id="phonenumber"
+                    name="phonenumber"
+                    style={{ color: "white" }}
+                    placeholder="Enter 10-digit mobile number"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="message" className="form-label">
+                    Message*
+                  </label>
+                  <textarea
+                    style={{ minHeight: "150px", color: "white" }}
+                    className="form-control transparent-input"
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary btn-custom">
+                  Get A Quote
+                </button>
+              </form>
+            </div>
           </div>
         )}
       </div>

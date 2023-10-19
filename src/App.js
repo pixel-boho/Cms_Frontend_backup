@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./css/global.css";
 
 // Home page Components
 import Navbar from "./components/Home/Navbar";
@@ -151,11 +152,11 @@ const App = () => {
         <Route
           path="/"
           element={
-            <>
+            <div className="overflow-hidden">
               <Navbar />
               <Header />
               <Services />
-              <Network/>
+              <Network />
               <ChooseUs />
               <Differentiators />
               <Achievements />
@@ -164,7 +165,7 @@ const App = () => {
               <Blog />
               <Form />
               <Footer />
-            </>
+            </div>
           }
         />
 
