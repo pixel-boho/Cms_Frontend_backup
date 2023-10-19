@@ -98,7 +98,7 @@ const Header = () => {
             src="/images/get-a-quote.png"
             className={styles["home-quote-direct"]}
             alt=""
-            style={{ top: 0 }}
+            style={{ top: "50%", padding: 0, transform: "translateY(-50%)" }}
           />
         </div>
         {/* Render the modal */}

@@ -49,7 +49,7 @@
 }
 .map-image.saudi {
   position: absolute;
-  top: 10%;
+  top: -2%;
   left: 13%;
 }
 .quatar {
@@ -89,6 +89,32 @@
   .map-container {
     right: unset;
   }
+  .map-image.oman {
+    max-width: 100px;
+    position: absolute;
+    top: 47%;
+    left: 58%;
+  }
+  .map-image.saudi {
+    position: absolute;
+    top: 13%;
+    left: 13%;
+  }
+  .quatar {
+    position: absolute;
+    top: 39.2%;
+    left: 53.5%;
+    width: 100%;
+    max-width: 15px;
+    z-index: 4;
+  }
+  .uae {
+    position: absolute;
+    max-width: 60px;
+    top: 42.2%;
+    left: 56%;
+    z-index: 4;
+  }
 }
 @media (min-width: 576px) {
   .map-container {
@@ -97,21 +123,21 @@
   }
 }
 @media (min-width: 768px) {
-  .network-bg-main {
-    height: 100vh;
-  }
   .map-container {
     transform: scale(1.7);
   }
 }
 @media (min-width: 992px) {
+  .network-bg-main {
+    height: 100vh;
+  }
   .map-container {
-    transform: scale(2);
+    transform: scale(1.5);
   }
 }
 @media (min-width: 1200px) {
   .map-container {
-    transform: scale(2);
+    transform: scale(1.5);
   }
 
   .map-image.oman {

@@ -11,8 +11,7 @@ import uaeHovered from "../../images/Network/uaehovered.png";
 import mapMask from "../../images/Network/mapmasks.png";
 import { Tooltip } from "react-tooltip";
 import ReactDOMServer from "react-dom/server";
-import arrow from "../../";
-import { Link } from "react-router-dom";
+
 function Network() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState({
