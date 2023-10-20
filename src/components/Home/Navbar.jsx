@@ -21,7 +21,7 @@ const Burger = styled.button`
   background: none;
   border: none;
   outline: none;
-  z-index: 5;
+  z-index: 6;
   @media (max-width: 768px) {
     top: 1rem;
     right: 3rem;
@@ -168,7 +168,7 @@ const Sidemenu = styled.div`
 
   &.open {
     transform: translateX(0);
-    z-index: 3;
+    z-index: 5;
 
     ul {
       li {
@@ -182,7 +182,7 @@ const Sidemenu = styled.div`
 const NavbarContainer = styled.nav`
   background: transparent;
   max-width: 95%;
-  margin:0 auto;
+  margin: 0 auto;
   width: 100%;
 
   @media (max-width: 768px) {
@@ -197,7 +197,7 @@ const NavbarContainer = styled.nav`
 const LogoImage = styled.img`
   width: 70px;
   height: auto;
-  z-index: 5;
+  z-index: 0;
 
   @media (max-width: 768px) {
     max-width: 50%;
@@ -312,7 +312,7 @@ const Navbar = () => {
       {/* Main Navbar */}
       <NavbarContainer className="navbar sticky">
         <div className="w-100 px-4 d-flex justify-content-between align-items-center">
-          <Link to="/" className="navbar-brand" style={{ zIndex: "15" }}>
+          <Link to="/" className="navbar-brand">
             <LogoImage src="images/nav_logo.png" alt="Logo" />
           </Link>
 

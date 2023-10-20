@@ -86,7 +86,7 @@ const Header = () => {
           </div>
           <div
             className={`col-lg-6   ${styles["right-pane"]} `}
-            style={{ zIndex: 1, height:"100%" }}
+            style={{ zIndex: 1, height: "100%" }}
           >
             <div className="position-relative" style={{ height: "100%" }}>
               <img src={headerImage} alt="header" className="" />
@@ -98,6 +98,7 @@ const Header = () => {
             src="/images/get-a-quote.png"
             className={styles["home-quote-direct"]}
             alt=""
+            style={{ top: "50%", padding: 0, transform: "translateY(-50%)" }}
           />
         </div>
         {/* Render the modal */}

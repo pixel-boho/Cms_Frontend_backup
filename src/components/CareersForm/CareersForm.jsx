@@ -23,7 +23,6 @@ const CareersForm = (props) => {
   return (
     <>
       <div className="container-fluid split-form-container">
-        <div className="split-form-image-career"></div>
         {isSubmitted ? (
           <div className="thank-you-message-main-form split-form-career">
             <h3
@@ -34,76 +33,114 @@ const CareersForm = (props) => {
             </h3>
           </div>
         ) : (
-          <div className="split-form-career">
-            <h2>How can</h2>
-            <h4 className="split-first-head">We Help You?</h4>
-            <form className="form-market" onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <label htmlFor="name" className="form-label">
-                  Name*
-                </label>
-                <input
-                  type="text"
-                  className="form-control transparent-input"
-                  id="name"
-                  name="name"
-                  style={{ color: "white" }}
-                  placeholder="Enter first and last name"
-                  required
-                />
+          <div className="container-fluid contact-us-split-form-container">
+            <div className="row">
+              <div className="col-lg-6 contact-us-arrange">
+                <h1 className="contact-us-heads">Be a part of ALSI</h1>
+                <p className="contact-us-paragh">
+                  We're eager to hear from you! At ALSI, we value open
+                  communication...
+                </p>
               </div>
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email*
-                </label>
-                <input
-                  type="email"
-                  className="form-control transparent-input"
-                  id="email"
-                  name="email"
-                  style={{ color: "white" }}
-                  placeholder="Eg. youremail@email.com"
-                  required
-                />
+              <div className="col-lg-6 contact-us-split-form">
+                {isSubmitted ? (
+                  <div
+                    className="thank-you-message-main-form split-form"
+                    style={{ borderRadius: "5%" }}
+                  >
+                    <h3
+                      className="thank-you-message-main-form-one ZoomIn"
+                      style={{
+                        color: "#fff",
+                        fontWeight: "800",
+                        paddingTop: "50px",
+                        borderRadius: "10px",
+                      }}
+                    >
+                      Thank you for submitting your enquiry!
+                    </h3>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-3">
+                      <label htmlFor="name" className="contact-us-form-label">
+                        Name*
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        className="contact-us-form-control contact-us-transparent-input"
+                        id="name"
+                        name="name"
+                        placeholder="Enter first and last name"
+                        required
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label htmlFor="email" className="contact-us-form-label">
+                        Email*
+                      </label>
+                      <br />
+                      <input
+                        type="email"
+                        className="contact-us-form-control contact-us-transparent-input"
+                        id="email"
+                        name="email"
+                        placeholder="Eg. youremail@email.com"
+                        required
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label
+                        htmlFor="phonenumber"
+                        className="contact-us-form-label"
+                      >
+                        Phone Number*
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        className="contact-us-form-control contact-us-transparent-input"
+                        id="phonenumber"
+                        name="phonenumber"
+                        placeholder="Enter 10-digit mobile number"
+                        required
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label
+                        htmlFor="message"
+                        className="contact-us-form-label"
+                      >
+                        Message*
+                      </label>
+                      <br />
+                      <textarea
+                        className="contact-us-form-control contact-us-transparent-input"
+                        id="message"
+                        name="message"
+                        required
+                        placeholder="Your Message"
+                      ></textarea>
+                    </div>
+                    <div class="input-group mb-3">
+                      <input
+                        type="file"
+                        name="file"
+                        class="form-control"
+                        id="inputGroupFile01"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="contact-us-btn btn-primary contact-us-btn-custom"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                )}
               </div>
-              <div className="mb-3">
-                <label htmlFor="phonenumber" className="form-label">
-                  Phone Number*
-                </label>
-                <input
-                  type="text"
-                  className="form-control transparent-input"
-                  id="phonenumber"
-                  name="phonenumber"
-                  style={{ color: "white" }}
-                  placeholder="Enter 10-digit mobile number"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">
-                  Message*
-                </label>
-                <textarea
-                  style={{ minHeight: "150px", color: "white" }}
-                  className="form-control transparent-input"
-                  id="message"
-                  name="message"
-                  required
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <div className="form-label-career-choose">
-                <h6>Choose File Example</h6>
-                <input type="file" onChange={handleFileChange} />
-                {selectedFile && <p>Selected file: {selectedFile.name}</p>}
-              </div>
-              <div className="submit-careers-botton pb-3">
-                <button type="submit" className="btn btn-primary btn-custom ">
-                  Submit
-                </button>
-              </div>
-            </form>
+            </div>
           </div>
         )}
       </div>
