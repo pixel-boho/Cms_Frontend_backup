@@ -57,7 +57,7 @@ const Services = () => {
               slidesPerView={"auto"}
               centeredSlides={true}
               autoplay={{
-                delay: 2000,
+                delay: 100,
                 disableOnInteraction: false,
               }}
               loop={true}
