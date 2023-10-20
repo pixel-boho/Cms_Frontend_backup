@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Services.css";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
@@ -40,10 +40,7 @@ const SlideNextButton = () => {
   );
 };
 const OtherServicesCustomsClearance = () => {
-  const leftArrowRef = useRef(null);
-  const rightArrowRef = useRef(null);
-  const carouselRef = useRef(null);
-  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+
 
   return (
     <>

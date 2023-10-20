@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Services.css";
 import { Autoplay } from "swiper/modules";
@@ -22,7 +22,6 @@ const SlidePrevButton = () => {
     </button>
   );
 };
-
 const SlideNextButton = () => {
   const swiper = useSwiper();
   return (

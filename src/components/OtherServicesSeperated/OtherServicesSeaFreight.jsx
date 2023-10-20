@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Services.css";
 import { Autoplay } from "swiper/modules";
@@ -40,73 +40,6 @@ const SlideNextButton = () => {
   );
 };
 const OtherServicesSeaFreight = () => {
-  const leftArrowRef = useRef(null);
-  const rightArrowRef = useRef(null);
-  const carouselRef = useRef(null);
-  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
-
-  useEffect(() => {
-    const scrollAmount = 298;
-
-    const handleMouseEnter = () => {
-      setIsAutoScrolling(false);
-    };
-
-    const handleMouseLeave = () => {
-      setIsAutoScrolling(true);
-    };
-
-    const scrollLeft = () => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollBy({
-          left: -scrollAmount,
-          behavior: "smooth",
-        });
-      }
-    };
-
-    const scrollRight = () => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollBy({
-          left: scrollAmount,
-          behavior: "smooth",
-        });
-
-        if (
-          carouselRef.current.scrollLeft + carouselRef.current.clientWidth >=
-          carouselRef.current.scrollWidth
-        ) {
-          carouselRef.current.scrollLeft = 0;
-        }
-      }
-    };
-
-    const handleAutoScroll = () => {
-      if (isAutoScrolling) {
-        scrollRight();
-      } else {
-        scrollLeft();
-      }
-    };
-
-    const intervalId = setInterval(handleAutoScroll, 3000);
-
-    if (leftArrowRef.current && rightArrowRef.current && carouselRef.current) {
-      leftArrowRef.current.addEventListener("click", scrollLeft);
-      rightArrowRef.current.addEventListener("click", scrollRight);
-      carouselRef.current.addEventListener("mouseenter", handleMouseEnter);
-      carouselRef.current.addEventListener("mouseleave", handleMouseLeave);
-
-      return () => {
-        leftArrowRef.current.removeEventListener("click", scrollLeft);
-        rightArrowRef.current.removeEventListener("click", scrollRight);
-        carouselRef.current.removeEventListener("mouseenter", handleMouseEnter);
-        carouselRef.current.removeEventListener("mouseleave", handleMouseLeave);
-        clearInterval(intervalId);
-      };
-    }
-  }, [isAutoScrolling]);
-
   return (
     <>
       <div className="container-fluid">

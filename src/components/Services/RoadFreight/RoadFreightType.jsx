@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./../../../css/ServicesCss/RoadFreight/RoadFreightType.css";
+import "./../../../css/ServicesCss/Clearance/ClearanceType.css";
 
 function RoadFreightType() {
   return (
