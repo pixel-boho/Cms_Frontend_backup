@@ -96,28 +96,40 @@ const FirstBlogHeader = () => {
                       alt=""
                     />
                   </a>
-                  <a href="https://twitter.com/ALSI_OFFICIAL" className="icon-link-c-h">
+                  <a
+                    href="https://twitter.com/ALSI_OFFICIAL"
+                    className="icon-link-c-h"
+                  >
                     <img
                       className="bi-custom-bi-ch"
                       src="/images/twitter-white.png"
                       alt=""
                     />
                   </a>
-                  <a href="https://www.linkedin.com/company/alsi-official/" className="icon-link-c-h">
+                  <a
+                    href="https://www.linkedin.com/company/alsi-official/"
+                    className="icon-link-c-h"
+                  >
                     <img
                       className="bi-custom-bi-ch"
                       src="/images/linkedin-white.png"
                       alt=""
                     />
                   </a>
-                  <a href="https://www.instagram.com/alsiformarineservices_official/" className="icon-link-c-h">
+                  <a
+                    href="https://www.instagram.com/alsiformarineservices_official/"
+                    className="icon-link-c-h"
+                  >
                     <img
                       className="bi-custom-bi-ch"
                       src="/images/instagram-white.png"
                       alt=""
                     />
                   </a>
-                  <a href="https://www.facebook.com/alsimarineservice" className="icon-link-c-h">
+                  <a
+                    href="https://www.facebook.com/alsimarineservice"
+                    className="icon-link-c-h"
+                  >
                     <img
                       className="bi-custom-bi-ch"
                       src="/images/facebook-white.png"
@@ -241,10 +253,11 @@ const FirstBlogHeader = () => {
       </div>
 
       <div className="container-fluid">
-        <div className="col-lg-12 firsts-blog-txt-pad">
-          <div className="row firsts-blog-text-nav-pad">
+        <div className="row ">
+          <div className="col-lg-12 firsts-blog-txt-pad px-4">
             <p className="firsts-blog-text-nav">
-            The customs laws in GCC Free Trade Zones are typically<br/> more liberal compared to non-FTZ areas.
+              The customs laws in GCC Free Trade Zones are typically more
+              liberal compared to non-FTZ areas.
             </p>
           </div>
         </div>
