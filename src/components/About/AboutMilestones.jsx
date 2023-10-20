@@ -16,11 +16,11 @@ const AboutMilestones = (props) => {
       <div className="container scroll-milestone-main">
         <div className="scroll-milestone">
           <div className="background-container">
-            {/* <img
+            <img
               src="images/AboutCelebs/Abouttimeline.png"
               alt=""
               className="background-image-milestone"
-            /> */}
+            />
             <img src="images/Vector-1.png" alt="" className="scroll-image" />
             <div className="inside-box-text">
               <h3>2008</h3>

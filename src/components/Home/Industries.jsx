@@ -190,7 +190,7 @@ const Industries = () => {
         {/* <Row className="indus-space-adjust market-page-one"> */}
         <Swiper
           spaceBetween={0}
-          slidesPerView={3}
+          
           centeredSlides={true}
           autoplay={{
             delay: 2000,
@@ -213,6 +213,7 @@ const Industries = () => {
               slidesPerView: 3,
               spaceBetween: 40,
             },
+            
           }}
         >
           {industries.map((industry) => (

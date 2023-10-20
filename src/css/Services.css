@@ -200,3 +200,21 @@
     list-style: none;
   }
 }
+
+@media (min-width: 1400px) {
+  .card-med {
+    width: 463px;
+  }
+
+}
+@media (min-width: 1600px) {
+  .card-med {
+    width: 600px;
+  }
+
+}
+
+.service-swiper-wrapper{
+  max-width: 93%;
+  margin: 0 auto;
+}

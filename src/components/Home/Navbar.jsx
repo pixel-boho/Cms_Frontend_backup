@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "./../../css/Navbar.css";
@@ -209,6 +209,7 @@ const LogoImage = styled.img`
 `;
 
 const Navbar = () => {
+  const [scroll, setScroll] = useState(0);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [globalNetworkDropdownOpen, setGlobalNetworkDropdownOpen] =
     useState(false);
@@ -258,6 +259,23 @@ const Navbar = () => {
       fontSize: "10px",
     },
   };
+
+  const toTop = () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      // mybutton.style.display = "block";
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0;
+    } else {
+      // mybutton.style.display = "none";
+    }
+  };
+
+  const [isVisible, setIsVisible] = useState(false);
+
+
   return (
     <>
       <ul className="nav justify-content-end mt-3 navbar-pos">
@@ -546,6 +564,18 @@ const Navbar = () => {
           </ul>
         </div>
       </Sidemenu>
+
+      <button
+        type="button"
+        className={`btn floating-top-btn
+      
+        `}
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </>
   );
 };

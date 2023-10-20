@@ -1,16 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./../../../css/ServicesCss/WareHouse/WareHouseType.css";
+import "./../../../css/ServicesCss/Clearance/ClearanceType.css";
 
 function WareHouseType() {
   return (
-    <>
+    <div className="warehouse-container">
       <Container fluid className="position-relative">
         <div className="container-cc-type-serv">
           <h3 className="main-title-cc-type-serv">
-          Types of Storage
-          We Provide
+            Types of Storage We Provide
           </h3>
         </div>
         <img
@@ -35,11 +34,11 @@ function WareHouseType() {
             <Col md={4}>
               <Card className="card-child-service">
                 <Card.Img
-                  src="images/WareHouse/TemperatureControlledStorage.jpg" 
+                  src="images/WareHouse/TemperatureControlledStorage.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Temperature Controlled Storage</Card.Title> 
+                  <Card.Title>Temperature Controlled Storage</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -51,7 +50,7 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Chemical and Dangerous Goods Storage</Card.Title> 
+                  <Card.Title>Chemical and Dangerous Goods Storage</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -63,13 +62,11 @@ function WareHouseType() {
             <Col md={4}>
               <Card className="card-child-service">
                 <Card.Img
-                  src="images/WareHouse/OpenYardStorage.jpg" 
+                  src="images/WareHouse/OpenYardStorage.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>
-                  Open Yard Storage
-                  </Card.Title>
+                  <Card.Title>Open Yard Storage</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -78,13 +75,10 @@ function WareHouseType() {
         </div>
       </Container>
 
-
-
       <Container fluid className="position-relative">
         <div className="container-cc-type-serv">
           <h3 className="main-title-cc-type-serv">
-          Locations We Provide Warehousing and
-       Distribution in Oman
+            Locations We Provide Warehousing and Distribution in Oman
           </h3>
         </div>
         <img
@@ -109,11 +103,11 @@ function WareHouseType() {
             <Col md={4}>
               <Card className="card-child-service">
                 <Card.Img
-                  src="images/WareHouse/Barka.jpg" 
+                  src="images/WareHouse/Barka.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Barka</Card.Title> 
+                  <Card.Title>Barka</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -125,7 +119,7 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Sohar Industrial Area</Card.Title> 
+                  <Card.Title>Sohar Industrial Area</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -137,13 +131,11 @@ function WareHouseType() {
             <Col md={4}>
               <Card className="card-child-service">
                 <Card.Img
-                  src="images/WareHouse/SoharFreeZone.jpg" 
+                  src="images/WareHouse/SoharFreeZone.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>
-                  Sohar Free Zone
-                  </Card.Title>
+                  <Card.Title>Sohar Free Zone</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -152,12 +144,10 @@ function WareHouseType() {
         </div>
       </Container>
 
-
       <Container fluid className="position-relative">
         <div className="container-cc-type-serv">
           <h3 className="main-title-cc-type-serv">
-          Value-Added Services
-          (VAS) We Provide
+            Value-Added Services (VAS) We Provide
           </h3>
         </div>
         <img
@@ -198,7 +188,7 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Cross Docking Services</Card.Title> 
+                  <Card.Title>Cross Docking Services</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -214,10 +204,7 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>
-                  Fumigation 
-                
-                  </Card.Title>
+                  <Card.Title>Fumigation</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -241,9 +228,7 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>
-                  Kitting
-                  </Card.Title>
+                  <Card.Title>Kitting</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -252,11 +237,8 @@ function WareHouseType() {
         </div>
       </Container>
 
-
-
       <Container fluid className="position-relative">
-        <div className="container-cc-type-serv">
-        </div>
+        <div className="container-cc-type-serv"></div>
         <img
           className="bg-main-img"
           src="images/CargoService/cargo-mixed.png"
@@ -267,7 +249,7 @@ function WareHouseType() {
             <Col md={4}>
               <Card className="card-child-service">
                 <Card.Img
-                  src="images/WareHouse/Labelling.jpg" 
+                  src="images/WareHouse/Labelling.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
@@ -311,9 +293,7 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>
-                  Pick and Pack
-                  </Card.Title>
+                  <Card.Title>Pick and Pack</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -337,10 +317,7 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>
-                  ProductRework
-              
-                  </Card.Title>
+                  <Card.Title>ProductRework</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -349,20 +326,19 @@ function WareHouseType() {
         </div>
       </Container>
 
-
-
       <Container fluid className="position-relative">
         <img
           className="bg-main-img"
           src="images/CargoService/cargo-mixed.png"
           alt=""
+          style={{ transform: "translateY(0%)" }}
         />
         <div className="container-cc-type-serv">
           <div className="card-cc-type-serv row">
             <Col md={4}>
               <Card className="card-child-service">
                 <Card.Img
-                  src="images/WareHouse/PromotionalPacking.jpg" 
+                  src="images/WareHouse/PromotionalPacking.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
@@ -378,7 +354,9 @@ function WareHouseType() {
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Specialized Pipe Handling and Cross-docking</Card.Title>
+                  <Card.Title>
+                    Specialized Pipe Handling and Cross-docking
+                  </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -386,7 +364,7 @@ function WareHouseType() {
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 }
 

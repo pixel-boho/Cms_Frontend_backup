@@ -63,6 +63,7 @@ const Services = () => {
               loop={true}
               navigation={false}
               modules={[ Autoplay]}
+              
               className="services-slider"
             >
               <SwiperSlide>

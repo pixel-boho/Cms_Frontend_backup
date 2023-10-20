@@ -45,68 +45,6 @@ const OtherServicesCustomsClearance = () => {
   const carouselRef = useRef(null);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
 
-  useEffect(() => {
-    const scrollAmount = 298;
-
-    const handleMouseEnter = () => {
-      setIsAutoScrolling(false);
-    };
-
-    const handleMouseLeave = () => {
-      setIsAutoScrolling(true);
-    };
-
-    const scrollLeft = () => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollBy({
-          left: -scrollAmount,
-          behavior: "smooth",
-        });
-      }
-    };
-
-    const scrollRight = () => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollBy({
-          left: scrollAmount,
-          behavior: "smooth",
-        });
-
-        if (
-          carouselRef.current.scrollLeft + carouselRef.current.clientWidth >=
-          carouselRef.current.scrollWidth
-        ) {
-          carouselRef.current.scrollLeft = 0;
-        }
-      }
-    };
-
-    const handleAutoScroll = () => {
-      if (isAutoScrolling) {
-        scrollRight();
-      } else {
-        scrollLeft();
-      }
-    };
-
-    const intervalId = setInterval(handleAutoScroll, 3000);
-
-    if (leftArrowRef.current && rightArrowRef.current && carouselRef.current) {
-      leftArrowRef.current.addEventListener("click", scrollLeft);
-      rightArrowRef.current.addEventListener("click", scrollRight);
-      carouselRef.current.addEventListener("mouseenter", handleMouseEnter);
-      carouselRef.current.addEventListener("mouseleave", handleMouseLeave);
-
-      return () => {
-        leftArrowRef.current.removeEventListener("click", scrollLeft);
-        rightArrowRef.current.removeEventListener("click", scrollRight);
-        carouselRef.current.removeEventListener("mouseenter", handleMouseEnter);
-        carouselRef.current.removeEventListener("mouseleave", handleMouseLeave);
-        clearInterval(intervalId);
-      };
-    }
-  }, [isAutoScrolling]);
-
   return (
     <>
       <div className="container-fluid">
@@ -117,10 +55,10 @@ const OtherServicesCustomsClearance = () => {
       </div>
 
       <div className="container-fluid car-service-cards">
-        <div className="car-wrapper">
+        <div className="service-swiper-wrapper">
           <Swiper
             spaceBetween={0}
-            slidesPerView={"auto"}
+            // slidesPerView={""}
             centeredSlides={true}
             autoplay={{
               delay: 2500,
@@ -128,8 +66,23 @@ const OtherServicesCustomsClearance = () => {
             }}
             loop={true}
             navigation={false}
-            modules={[FreeMode, Autoplay]}
+            modules={[Autoplay]}
             className="services-slider"
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+             
+            }}
           >
             <SwiperSlide>
               <div className="card card-med">
@@ -334,16 +287,15 @@ const OtherServicesCustomsClearance = () => {
               </div>
             </SwiperSlide>
             <div className="arrows-service">
-                <div className="col-lg-12 ">
-                  <div className="col-lg d-flex justify-content-center">
-                    <SlidePrevButton />
-                    <SlideNextButton />
-                  </div>
+              <div className="col-lg-12 ">
+                <div className="col-lg d-flex justify-content-center">
+                  <SlidePrevButton />
+                  <SlideNextButton />
                 </div>
               </div>
+            </div>
           </Swiper>
         </div>
-
       </div>
     </>
   );

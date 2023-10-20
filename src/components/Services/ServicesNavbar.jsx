@@ -24,6 +24,86 @@ const ServicesNavbar = () => {
     marginLeft: "22px",
   };
 
+  let navLinks = [
+    {
+      text: "Home",
+      link: "/",
+    },
+    {
+      text: "About Us",
+      link: "/about_us",
+    },
+    {
+      text: "Services",
+      children: [
+        {
+          text: "Customs Clearance",
+          link: "/customs_clearance",
+        },
+        {
+          text: "Road Freight",
+          link: "/road_freight",
+        },
+        {
+          text: "Sea Freight",
+          link: "/sea_freight",
+        },
+        {
+          text: "Air Freight",
+          link: "/air_freight",
+        },
+        {
+          text: "Project Cargo Services",
+          link: "/project_cargo_services",
+        },
+        {
+          text: "Warehousing and Distribution",
+          link: "/warehouse_distribution",
+        },
+        {
+          text: "Specialized Services",
+          link: "/specialized_services",
+        },
+      ],
+    },
+    {
+      text: "Global Network",
+      children: [
+        {
+          text: "Oman",
+          link: "/oman",
+        },
+        {
+          text: "UAE",
+          link: "/uae",
+        },
+        {
+          text: "Qatar",
+          link: "/qatar",
+        },
+        {
+          text: "Saudi",
+          link: "/saudi",
+        },
+      ],
+    },
+    {
+      text: "Industries",
+      link: "/industries",
+    },
+    {
+      text: " Market Updates",
+      link: "/market_updates",
+    },
+    {
+      text: " Contact Us",
+      link: "/contact_us",
+    },
+    {
+      text: "Careers",
+      link: "/careers",
+    },
+  ];
   return (
     <>
       <div className="container-fluid">
@@ -78,7 +158,38 @@ const ServicesNavbar = () => {
             id="responsive-navbar-nav"
           >
             <Nav className="ml-auto">
-              <Nav.Link href="/" style={linkStyles}>
+              {navLinks.map((linkObj) => {
+                if (linkObj.children && linkObj.children.length > 0) {
+                  return (
+                    <NavDropdown
+                      title={linkObj.text}
+                      id="basic-nav-dropdown"
+                      className={`custom-dropdown-title-s ${
+                        isOpen ? "nav-link" : "lg-nav-link"
+                      }`}
+                      style={linkStyles}
+                    >
+                      {linkObj.children.map(({ link, text }) => (
+                        <NavDropdown.Item href={link}>{text}</NavDropdown.Item>
+                      ))}
+                    </NavDropdown>
+                  );
+                }
+
+                return (
+                  <Nav.Link
+                    href={linkObj.link}
+                    className={
+                      window.location.pathname === linkObj.link ? "fw-bold" : ""
+                    }
+                    style={linkStyles}
+                  >
+                    {linkObj.text}
+                  </Nav.Link>
+                );
+              })}
+
+              {/* <Nav.Link href="/" style={linkStyles}>
                 Home
               </Nav.Link>
               <Nav.Link href="/about_us" style={linkStyles}>
@@ -139,11 +250,22 @@ const ServicesNavbar = () => {
               </Nav.Link>
               <Nav.Link href="/careers" style={linkStyles}>
                 Careers
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </div>
       </Navbar>
+      <button
+        type="button"
+        className={`btn floating-top-btn
+      
+        `}
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </>
   );
 };
