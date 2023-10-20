@@ -20,41 +20,44 @@ const ServicesNavbar = () => {
 
   const linkStyles = {
     textDecoration: "none",
-    color: "white",
+    color: isOpen ? "white" : "black",
     marginLeft: "22px",
   };
 
   return (
     <>
+      <div className="container-fluid">
+        <div className="row icons-service-navi">
+          <div className="col-lg-12">
+            <nav
+              className="d-flex justify-content-end"
+              style={{ padding: "0 25px" }}
+            >
+              <a href="https://www.facebook.com/alsimarineservice">
+                <i className="bi-navi bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/alsiformarineservices_official/">
+                <i className="bi-navi bi-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/alsi-official/">
+                <i className="bi-navi bi-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/ALSI_OFFICIAL">
+                <i className="bi-navi bi-twitter"></i>
+              </a>
+              <a href="https://in.pinterest.com/alsiformarineservicellc/">
+                <i className="bi-navi bi-pinterest"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
       <Navbar
         expand="lg"
         className={`navbar navbar-expand-lg navbar-custom-service sticky-top ${
           isOpen ? "bg-primary" : "bg-white "
         }`}
       >
-        <div className="container-fluid">
-          <div className="row icons-service-navi">
-            <div className="col-lg-12">
-              <nav className="d-flex justify-content-end">
-                <a href="https://www.facebook.com/alsimarineservice">
-                  <i className="bi-navi bi-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/alsiformarineservices_official/">
-                  <i className="bi-navi bi-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/alsi-official/">
-                  <i className="bi-navi bi-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/ALSI_OFFICIAL">
-                  <i className="bi-navi bi-twitter"></i>
-                </a>
-                <a href="https://in.pinterest.com/alsiformarineservicellc/">
-                  <i className="bi-navi bi-pinterest"></i>
-                </a>
-              </nav>
-            </div>
-          </div>
-        </div>
         <div className="container-fluid">
           <Navbar.Brand href="/">
             <img
@@ -84,7 +87,9 @@ const ServicesNavbar = () => {
               <NavDropdown
                 title="Services"
                 id="basic-nav-dropdown"
-                className="custom-dropdown-title-s text-white"
+                className={`custom-dropdown-title-s ${
+                  isOpen ? "nav-link" : "lg-nav-link"
+                }`}
                 style={linkStyles}
               >
                 <NavDropdown.Item href="/customs_clearance">
@@ -113,7 +118,9 @@ const ServicesNavbar = () => {
               <NavDropdown
                 title="Global Network"
                 id="basic-nav-dropdown"
-                className="custom-dropdown-title-s nav-link"
+                className={`custom-dropdown-title-s ${
+                  isOpen ? "nav-link" : "lg-nav-link"
+                }`}
                 style={linkStyles}
               >
                 <NavDropdown.Item href="/oman">Oman</NavDropdown.Item>
