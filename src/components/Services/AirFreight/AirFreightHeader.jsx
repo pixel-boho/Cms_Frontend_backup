@@ -54,7 +54,7 @@ const AirFreightHeader = () => {
                 <img src="./images/get-a-quote.png" alt="Get a Quote" />
               </div>
               <h1 className="air-f-serv-text text-center">
-                Air Freight Forwarding
+                Air Freight
               </h1>
             </div>
           </div>

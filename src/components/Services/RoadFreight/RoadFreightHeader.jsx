@@ -54,7 +54,7 @@ const RoadFreightHeader = () => {
                 <img src="./images/get-a-quote.png" alt="Get a Quote" />
               </div>
               <h1 className="rf-serv-text text-center">
-                Road Freight Forwarding
+                Road Freight 
               </h1>
             </div>
           </div>

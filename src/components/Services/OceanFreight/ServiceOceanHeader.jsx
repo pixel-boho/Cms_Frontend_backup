@@ -54,7 +54,7 @@ const ServiceOceanHeader = () => {
                 <img src="./images/get-a-quote.png" alt="Get a Quote" />
               </div>
               <h1 className="ocean-text text-center">
-                Ocean Freight Forwarding
+                Ocean Freight 
               </h1>
             </div>
           </div>

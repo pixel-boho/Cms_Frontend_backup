@@ -54,7 +54,7 @@ const WareHouseHeader = () => {
                 <img src="./images/get-a-quote.png" alt="Get a Quote" />
               </div>
               <h1 className="wh-serv-text text-center">
-                Warehouse and Distribution
+                Warehousing and Distribution
               </h1>
             </div>
           </div>
