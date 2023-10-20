@@ -1,79 +1,47 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Services.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+const SlidePrevButton = () => {
+  const swiper = useSwiper();
+  return (
+    <button
+      type="button"
+      className=" outline-none border-0 bg-transparent me-4"
+      style={{ width: "50px", height: "50px" }}
+      onClick={() => swiper.slidePrev()}
+    >
+      <img
+        src="/images/black-circle-left-arrow.png"
+        className="car-bi bi-arrow-left-circle-fill arrow-icon"
+        style={{ width: "40px" }}
+        alt="Left Arrow"
+      />
+    </button>
+  );
+};
+const SlideNextButton = () => {
+  const swiper = useSwiper();
+  return (
+    <button
+      type="button"
+      className="outline-none border-0 bg-transparent"
+      onClick={() => swiper.slideNext()}
+    >
+      <img
+        src="/images/black-circle-right-arrow.png"
+        className="car-bi bi-arrow-right-circle-fill arrow-icon"
+        style={{ width: "40px" }}
+        alt="Right Arrow"
+      />
+    </button>
+  );
+};
 const Services = () => {
-  const leftArrowRef = useRef(null);
-  const rightArrowRef = useRef(null);
-  const carouselRef = useRef(null);
-  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
-
-  // useEffect(() => {
-  //   const scrollAmount = 298;
-
-  //   const handleMouseEnter = () => {
-  //     setIsAutoScrolling(false);
-  //   };
-
-  //   const handleMouseLeave = () => {
-  //     setIsAutoScrolling(true);
-  //   };
-
-  //   const scrollLeft = () => {
-  //     if (carouselRef.current) {
-  //       carouselRef.current.scrollBy({
-  //         left: -scrollAmount,
-  //         behavior: "smooth",
-  //       });
-  //     }
-  //   };
-
-  //   const scrollRight = () => {
-  //     if (carouselRef.current) {
-  //       carouselRef.current.scrollBy({
-  //         left: scrollAmount,
-  //         behavior: "smooth",
-  //       });
-
-  //       if (
-  //         carouselRef.current.scrollLeft + carouselRef.current.clientWidth >=
-  //         carouselRef.current.scrollWidth
-  //       ) {
-  //         carouselRef.current.scrollLeft = 0;
-  //       }
-  //     }
-  //   };
-
-  //   const handleAutoScroll = () => {
-  //     if (isAutoScrolling) {
-  //       scrollRight();
-  //     } else {
-  //       scrollLeft();
-  //     }
-  //   };
-
-  //   const intervalId = setInterval(handleAutoScroll, 4000);
-
-  //   if (leftArrowRef.current && rightArrowRef.current && carouselRef.current) {
-  //     leftArrowRef.current.addEventListener("click", scrollLeft);
-  //     rightArrowRef.current.addEventListener("click", scrollRight);
-  //     carouselRef.current.addEventListener("mouseenter", handleMouseEnter);
-  //     carouselRef.current.addEventListener("mouseleave", handleMouseLeave);
-
-  //     return () => {
-  //       leftArrowRef.current.removeEventListener("click", scrollLeft);
-  //       rightArrowRef.current.removeEventListener("click", scrollRight);
-  //       carouselRef.current.removeEventListener("mouseenter", handleMouseEnter);
-  //       carouselRef.current.removeEventListener("mouseleave", handleMouseLeave);
-  //       clearInterval(intervalId);
-  //     };
-  //   }
-  // }, [isAutoScrolling]);
-
   return (
     <>
       <div className="container-fluid">
@@ -97,40 +65,6 @@ const Services = () => {
               modules={[Autoplay]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <div className="card card-med">
-                  <div className="car-img">
-                    <img
-                      src="./images/Services/custom.png"
-                      className="img-card-serve"
-                      alt="img"
-                      draggable="false"
-                    />
-                  </div>
-                  <h2 className="car-heading-custom">
-                    <Link
-                      to="/customs_clearance"
-                      style={{ color: "#193579", textDecoration: "none" }}
-                    >
-                      Customs Clearance
-                    </Link>
-                  </h2>
-                  <span className="car-c-parag">
-                    <a
-                      href="/customs_clearance"
-                      style={{ color: "#6a6d78", textDecoration: "none" }}
-                    >
-                      Streamlined customs clearance for swift and compliant
-                      international trade, reducing delays and ensuring smooth
-                      global transactions.
-                    </a>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                  </span>
-                </div>
-              </SwiperSlide>
               <SwiperSlide>
                 <div className="card card-med">
                   <div className="car-img">
@@ -370,32 +304,15 @@ const Services = () => {
                   </span>
                 </div>
               </SwiperSlide>
-              <SwiperSlide></SwiperSlide>
-              <SwiperSlide></SwiperSlide>
+              <div className="arrows-service">
+                <div className="col-lg-12 ">
+                  <div className="col-lg d-flex justify-content-center">
+                    <SlidePrevButton />
+                    <SlideNextButton />
+                  </div>
+                </div>
+              </div>
             </Swiper>
-          </div>
-        </div>
-
-        <div className="arrows-service">
-          <div className="col-lg-12">
-            <div className="col-lg arrow-one-s">
-              <img
-                src="/images/black-circle-left-arrow.png"
-                className="car-bi bi-arrow-left-circle-fill arrow-icon"
-                style={{ width: "40px" }}
-                ref={leftArrowRef}
-                alt="Left Arrow"
-              ></img>
-            </div>
-            <div className="col-lg arrow-two-s">
-              <img
-                src="/images/black-circle-right-arrow.png"
-                className="car-bi bi-arrow-right-circle-fill arrow-icon"
-                style={{ width: "40px" }}
-                ref={rightArrowRef}
-                alt="Right Arrow"
-              />
-            </div>
           </div>
         </div>
       </div>

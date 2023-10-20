@@ -2,8 +2,41 @@ import React, { useState, useEffect, useRef } from "react";
 import "./../../css/Industries.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col, Card } from "react-bootstrap";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+const SlideNextBtn = () => {
+  const swiper = useSwiper();
+  return (
+    <button
+      type="button"
+      onClick={() => swiper.slidePrev()}
+      className="outline-none border-0 bg-transparent"
+    >
+      <img
+        style={{ width: "55px", paddingRight: "5px" }}
+        src="/images/black-circle-left-arrow.png"
+        alt=""
+      />
+    </button>
+  );
+};
+const SlidePrevBtn = () => {
+  const swiper = useSwiper();
+
+  return (
+    <button
+      type="button"
+      onClick={() => swiper.slideNext()}
+      className="outline-none border-0 bg-transparent"
+    >
+      <img
+        style={{ width: "55px", paddingLeft: "5px" }}
+        src="/images/black-circle-right-arrow.png"
+        alt=""
+      />
+    </button>
+  );
+};
 
 const Industries = () => {
   const [scrollLeft, setScrollLeft] = useState(null);
@@ -154,69 +187,61 @@ const Industries = () => {
       </Row>
 
       <div className="container-fluid indus-spacing">
-        <Row className="indus-space-adjust market-page-one">
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={"auto"}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            navigation={false}
-            modules={[Autoplay]}
-            className="mySwiper"
-          >
-            {industries.map((industry) => (
-              <SwiperSlide lg key={industry.id}>
-                <Card
-                  className="card-scrollll card-indus"
-                  style={{ width: "330px" }}
-                  onMouseEnter={handleCardMouseEnter}
-                  onMouseLeave={handleCardMouseLeave}
-                >
-                  <Card.Body className="card-body-indus">
-                    <Card.Title
-                      className="card-title-indus pb-3"
-                      dangerouslySetInnerHTML={{ __html: industry.title }}
+        {/* <Row className="indus-space-adjust market-page-one"> */}
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={"auto"}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          navigation={false}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          {industries.map((industry) => (
+            <SwiperSlide lg key={industry.id}>
+              <Card
+                className="card-scrollll card-indus"
+                style={{ width: "330px" }}
+                onMouseEnter={handleCardMouseEnter}
+                onMouseLeave={handleCardMouseLeave}
+              >
+                <Card.Body className="card-body-indus">
+                  <Card.Title
+                    className="card-title-indus pb-3"
+                    dangerouslySetInnerHTML={{ __html: industry.title }}
+                  />
+                  <Card.Text
+                    className="card-text-indus"
+                    dangerouslySetInnerHTML={{ __html: industry.description }}
+                  />
+                  <a className="indus-count-num-hover">
+                    <Card.Img
+                      src={industry.image}
+                      alt="..."
+                      className="card-img-top-indus"
                     />
-                    <Card.Text
-                      className="card-text-indus"
-                      dangerouslySetInnerHTML={{ __html: industry.description }}
-                    />
-                    <a className="indus-count-num-hover">
-                      <Card.Img
-                        src={industry.image}
-                        alt="..."
-                        className="card-img-top-indus"
-                      />
-                    </a>
-                    <div
-                      className="indus-count-num"
-                      style={{ fontWeight: "600" }}
-                    >
-                      {industry.id}
-                    </div>
-                  </Card.Body>
-                </Card>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Row>
+                  </a>
+                  <div
+                    className="indus-count-num"
+                    style={{ fontWeight: "600" }}
+                  >
+                    {industry.id}
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+          ))}
 
-        <div className="row text-center arrow-icons-industry-lr justify-content-center d-flex">
-          <img
-            style={{ width: "55px", paddingRight: "5px" }}
-            src="/images/black-circle-left-arrow.png"
-            onClick={handlePrevClick}
-          />
-          <img
-            style={{ width: "55px", paddingLeft: "5px" }}
-            src="/images/black-circle-right-arrow.png"
-            onClick={handleNextClick}
-          />
-        </div>
+          <div className=" text-center arrow-icons-industry-lr justify-content-center d-flex">
+            <SlideNextBtn />
+            <SlidePrevBtn />
+          </div>
+        </Swiper>
+        {/* </Row> */}
       </div>
     </div>
   );
