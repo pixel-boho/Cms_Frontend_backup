@@ -36,7 +36,7 @@ const CareersForm = (props) => {
           <div className="container-fluid contact-us-split-form-container">
             <div className="row">
               <div className="col-lg-6 contact-us-arrange">
-                <h1 className="contact-us-heads">Let's connect and talk</h1>
+                <h1 className="contact-us-heads">Be a part of ALSI</h1>
                 <p className="contact-us-paragh">
                   We're eager to hear from you! At ALSI, we value open
                   communication...
