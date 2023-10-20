@@ -56,11 +56,12 @@ function Network() {
         alt=""
       />
       <div className="row h-100">
-        <div className="col-12  h-100 d-flex flex-column">
-          <h1 className="network-map-heading text-center mb-5">
+        <div className="col-12  d-flex flex-column">
+          <h1 className="network-map-heading text-center mt-5">
             Our Global Network
           </h1>
-
+        </div>
+        <div className="col-12 h-100" style={{ padding: "40px 0" }}>
           <div
             className="map-container"
             id="map-container"
@@ -155,6 +156,7 @@ function Network() {
                 alt=""
                 onMouseEnter={handleMouseEnter}
                 data-tooltip-id="my-tooltip"
+                data-tooltip-place="left"
                 data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
                   <div className="">
                     <h3 className="fw-bold">ALSI Saudi</h3>
@@ -196,6 +198,8 @@ function Network() {
                 name="qatar"
                 onMouseEnter={handleMouseEnter}
                 data-tooltip-id="my-tooltip"
+                data-tooltip-place="right"
+                data-tooltip-offset="0"
                 data-tooltip-html={ReactDOMServer.renderToStaticMarkup(
                   <div className="">
                     <h3 className="fw-bold">ALSI Qatar </h3>
@@ -242,7 +246,7 @@ function Network() {
           maxWidth: "200px",
           zIndex: "9999",
         }}
-        offset={-10}
+        offset={"-50"}
         isOpen={isOpen}
         clickable={true}
       />

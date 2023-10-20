@@ -49,7 +49,7 @@
     color: #ebebeb;
 }
 
-.swiper-slide:hover {
+.swiper-slide-higlight:hover {
     background: linear-gradient(to bottom, #193377, #0072a2);
     color: #fff; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -59,12 +59,12 @@
 }
 
 /* Add more animations */
-.swiper-slide:hover img {
+.swiper-slide-higlight:hover img {
     transform: scale(1.01);
     transition: transform 0.3s ease-in-out;
 }
 
-.swiper-slide:hover h1 {
+.swiper-slide-higlight:hover h1 {
     transform: translateY(-10px);
     transition: transform 0.3s ease-in-out;
 }
@@ -98,7 +98,7 @@
     margin-right: 140px;
 }
 
-.swiper-slide {
+.swiper-slide-higlight {
   width: 385px;
   padding: 0;
 }
