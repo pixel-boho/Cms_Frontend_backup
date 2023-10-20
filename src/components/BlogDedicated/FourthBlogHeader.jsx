@@ -241,7 +241,7 @@ const FourthBlogHeader = () => {
       </div>
 
       <div className="container-fluid">
-        <div className="col-lg-12 fourthss-blog-txt-pad">
+        <div className="col-lg-12 fourthss-blog-txt-pad px-4">
           <div className="row fourthss-blog-text-nav-pad">
             <p className="fourthss-blog-text-nav">
             Cross-border transportation is expected to continue to grow in <br/>importance in the GCC countries in the coming years.

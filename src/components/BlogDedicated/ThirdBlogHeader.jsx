@@ -241,7 +241,7 @@ const ThirdBlogHeader = () => {
       </div>
 
       <div className="container-fluid">
-        <div className="col-lg-12 thirdss-blog-txt-pad">
+        <div className="col-lg-12 thirdss-blog-txt-pad px-4">
           <div className="row thirdss-blog-text-nav-pad">
             <p className="thirdss-blog-text-nav">
             Efficient transportation links between the two countries have opened up new opportunities for businesses looking to expand their operations.

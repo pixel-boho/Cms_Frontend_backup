@@ -242,7 +242,7 @@ const FifthBlogHeader = () => {
       </div>
 
       <div className="container-fluid">
-        <div className="col-lg-12 fifthss-blog-txt-pad">
+        <div className="col-lg-12 fifthss-blog-txt-pad px-4">
           <div className="row fifthss-blog-text-nav-pad">
             <p className="fifthss-blog-text-nav">
             The GCC region is rapidly becoming an important hub for events and exhibitions.

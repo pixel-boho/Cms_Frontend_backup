@@ -241,7 +241,7 @@ const SecondBlogHeader = () => {
       </div>
 
       <div className="container-fluid">
-        <div className="col-lg-12 secondss-blog-txt-pad">
+        <div className="col-lg-12 secondss-blog-txt-pad col-lg-12 px-4">
           <div className="row secondss-blog-text-nav-pad">
             <p className="secondss-blog-text-nav">
             Big data has created new opportunities for efficient risk<br/> management in the customs clearing process.

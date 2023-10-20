@@ -10,7 +10,7 @@ const AboutSimply = () => {
         <div className="col-lg-12">
           <div className="row pb-3">
             <h2 className={styles.simplyAboutHead}>
-              Mission, Vision & Purpose
+              Mission, Vision And Purpose
             </h2>
             <p className={styles.simplyAboutParagh}></p>
           </div>
