@@ -61,7 +61,7 @@ function Network() {
             Our Global Network
           </h1>
         </div>
-        <div className="col-12 h-100" style={{ padding: "40px 0" }}>
+        <div className="col-12 " style={{ paddingTop: "90px", height: "100%"}}>
           <div
             className="map-container"
             id="map-container"

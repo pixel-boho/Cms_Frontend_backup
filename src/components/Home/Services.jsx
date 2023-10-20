@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Services.css";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -57,12 +57,12 @@ const Services = () => {
               slidesPerView={"auto"}
               centeredSlides={true}
               autoplay={{
-                delay: 100,
+                delay: 2500,
                 disableOnInteraction: false,
               }}
               loop={true}
               navigation={false}
-              modules={[Autoplay]}
+              modules={[ Autoplay]}
               className="services-slider"
             >
               <SwiperSlide>
