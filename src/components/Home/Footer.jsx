@@ -10,7 +10,7 @@ const Footer = (props) => {
             <div
               className={`col-lg-12 text-center ${styles["footer-head-logo"]}`}
             >
-              <img src="images/nav_logo.png" alt="" />
+              <img src="images/nav_logo.png"  alt="" />
             </div>
           </div>
           <div className={`row m-5 ${styles["center-content"]}`}>

@@ -5,7 +5,10 @@ const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? styles.displayBlock : styles.displayNone;
 
   return (
-    <div className={`${styles.modal} ${showHideClassName}`}>
+    <div
+      className={`${styles.modal} ${showHideClassName}`}
+      style={{ zIndex: 10000 }}
+    >
       <section className={styles.modalMain}>
         <button
           className={`close ${styles.closeButton} ${show ? "visible" : ""}`}

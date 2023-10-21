@@ -7,7 +7,7 @@ const AboutCertified = () => {
       <div className="col-lg-12">
         <div className="row">
           <h1 className={styles.AboutCertifiedHOne}>
-            Memberships & Certifications
+            Memberships And Certifications
           </h1>
         </div>
       </div>

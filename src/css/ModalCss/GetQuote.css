@@ -32,7 +32,6 @@
 .form-container-g-q label{
     color: rgb(228, 228, 228);
     float: left;
-    height: 12px;
     width: 100%;
     font-size: 13px;
 }
@@ -102,7 +101,6 @@ padding: 5px;
 .form-container-g-q label{
   color: rgb(228, 228, 228);
   float: left;
-  height: 9px;
   width: 50%;
 }
 .form-container-g-q input{

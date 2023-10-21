@@ -17,27 +17,28 @@
   overflow: hidden;
 }
 
-.scroll-milestone-main{
+.scroll-milestone-main {
   padding-bottom: 80px;
 }
 
- .background-container {
-  display: flex; 
-  width: 92%; 
-   animation: scrollBackground 30s linear infinite; 
+.background-container {
+  display: flex;
+  width: 92%;
+  animation: scrollBackground 30s infinite;
 }
 
 @media (max-width: 460px) {
   .background-container {
-    width: 620%; 
-     animation: scrollBackground 45s linear infinite; 
+    width: 620%;
+
+    animation: scrollBackground 45s infinite;
   }
 
   @keyframes scrollBackground {
     0% {
       transform: translateX(0%);
     }
-  
+
     100% {
       transform: translateX(-100%);
     }
@@ -55,9 +56,9 @@
 }
 
 .background-container:hover {
-  display: flex; 
+  display: flex;
   width: 200%;
-  animation: scrollBackground 0s linear infinite; 
+  animation: scrollBackground 0s linear infinite;
 }
 
 .background-image-milestone {
@@ -110,8 +111,6 @@
   transform: translateY(58px) translateX(1081px);
 }
 
-
-
 .scroll-image-5 {
   min-height: 10px !important;
   width: 258px;
@@ -155,7 +154,6 @@
   transform: translateY(210px) translateX(2304px);
 }
 
-
 .inside-box-text {
   position: absolute;
   font-size: 15px;
@@ -182,7 +180,6 @@
   text-align: center;
   transform: translateY(152px) translateX(655px);
 }
-
 
 .inside-box-text-3 {
   position: absolute;
@@ -247,7 +244,7 @@
   transform: translateY(284px) translateX(2360px);
 }
 
-.milestone-exp-pnt{
+.milestone-exp-pnt {
   color: black;
   position: absolute;
   transform: translateY(510px) translateX(90px);
@@ -255,11 +252,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt p{
+.milestone-exp-pnt p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-one{
+.milestone-exp-pnt-one {
   color: black;
   position: absolute;
   transform: translateY(-70px) translateX(348px);
@@ -267,11 +264,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-one p{
+.milestone-exp-pnt-one p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-two{
+.milestone-exp-pnt-two {
   color: black;
   position: absolute;
   transform: translateY(510px) translateX(500px);
@@ -279,11 +276,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-two p{
+.milestone-exp-pnt-two p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-three{
+.milestone-exp-pnt-three {
   color: black;
   position: absolute;
   transform: translateY(-35px) translateX(838px);
@@ -291,11 +288,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-three p{
+.milestone-exp-pnt-three p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-four{
+.milestone-exp-pnt-four {
   color: black;
   position: absolute;
   transform: translateY(510px) translateX(1050px);
@@ -303,11 +300,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-four p{
+.milestone-exp-pnt-four p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-five{
+.milestone-exp-pnt-five {
   color: black;
   position: absolute;
   transform: translateY(-70px) translateX(1305px);
@@ -315,11 +312,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-five p{
+.milestone-exp-pnt-five p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-six{
+.milestone-exp-pnt-six {
   color: black;
   position: absolute;
   transform: translateY(510px) translateX(1500px);
@@ -327,11 +324,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-six p{
+.milestone-exp-pnt-six p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-seven{
+.milestone-exp-pnt-seven {
   color: black;
   position: absolute;
   transform: translateY(-100px) translateX(1705px);
@@ -339,11 +336,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-seven p{
+.milestone-exp-pnt-seven p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-eight{
+.milestone-exp-pnt-eight {
   color: black;
   position: absolute;
   transform: translateY(510px) translateX(1988px);
@@ -351,11 +348,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-eight p{
+.milestone-exp-pnt-eight p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-seven{
+.milestone-exp-pnt-seven {
   color: black;
   position: absolute;
   transform: translateY(-100px) translateX(1705px);
@@ -363,11 +360,11 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-seven p{
+.milestone-exp-pnt-seven p {
   font-size: 14px;
 }
 
-.milestone-exp-pnt-nine{
+.milestone-exp-pnt-nine {
   color: black;
   position: absolute;
   transform: translateY(-70px) translateX(2268px);
@@ -375,6 +372,6 @@
   font-size: 15px;
 }
 
-.milestone-exp-pnt-nine p{
+.milestone-exp-pnt-nine p {
   font-size: 12px;
 }

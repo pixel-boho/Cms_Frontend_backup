@@ -4,7 +4,7 @@
 }
 .card-cc-type-serv {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 50px;
   width: 100%;
 }
@@ -73,6 +73,7 @@ p {
   height: 450px;
   width: 100%;
   object-fit: cover;
+  display: none;
 }
 .bg-main-img-one {
   z-index: -1;
@@ -119,10 +120,6 @@ p {
 }
 
 @media (max-width: 460px) {
-  .bg-main-img {
-    display: none;
-  }
-
   .bg-main-img-one {
     display: none;
   }
@@ -154,7 +151,6 @@ p {
   }
   .card-cc-type-serv {
     display: flex;
-    align-items: center;
     margin-bottom: 0px;
     width: 100%;
   }
@@ -213,3 +209,33 @@ p {
     font-size: 1rem;
   }
 }
+
+.air-freight-second .main-title-cc-type-serv {
+  color: black;
+}
+/* aerospace  page */
+.warehouse-container,
+.project-service-container,
+.air-freight-container,
+.sea-freight-container,
+.aerospace-container {
+  margin-bottom: 100px;
+}
+@media (min-width: 576px) {
+  .warehouse-container,
+  .project-service-container,
+  .air-freight-container,
+  .sea-freight-container,
+  .aerospace-container {
+    margin-bottom: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .bg-main-img {
+    display: block;
+  }
+  .air-freight-second .main-title-cc-type-serv {
+    color: white;
+  }
+}
+/* aerospace  page */

@@ -1,3 +1,7 @@
+.services-slider .swiper-slide {
+  width: 385px;
+}
+
 .car-service-card-meds-heading {
   align-items: center;
   justify-content: center;
@@ -10,7 +14,7 @@
   width: 80%;
 }
 
-.car-service-cards-bold{
+.car-service-cards-bold {
   padding-bottom: 30px;
 }
 
@@ -29,12 +33,12 @@
   padding: 0;
 }
 
-.arrows-service{
-display:flex;
-text-align: center;
-justify-content: center;
-padding-top: 40px;
-padding-bottom: 80px;
+.arrows-service {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .arrow-icon {
@@ -47,14 +51,14 @@ padding-bottom: 80px;
   z-index: 1;
 }
 
-.carousel-servicess{
+.carousel-servicess {
   display: flex;
   grid-auto-flow: column;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   margin: 10px 40px 10px 40px;
-    list-style: none;
+  list-style: none;
 }
 
 .carousel-container {
@@ -86,12 +90,16 @@ padding-bottom: 80px;
   justify-content: center;
   align-items: center;
 }
+.services-slider .swiper-slide {
+  width: 385px;
+}
 
 .card-med {
   /* scroll-snap-align: start; */
   border-radius: 10px;
   height: 370px;
   cursor: grab;
+  /* width: 370px; */
   min-width: 290px;
   box-shadow: 0px 0px 20px rgba(85, 85, 85, 0.151);
   border: none;
@@ -104,16 +112,17 @@ padding-bottom: 80px;
 }
 
 .card-med {
-  transition: transform 0.1s ease; 
+  transition: transform 0.1s ease;
 }
 
 .card-med:hover {
   background-color: rgb(255, 255, 255);
   border: 0;
   border: none;
-  box-shadow: 0px 1px 0px 1px(255, 255, 255, 0.3); 
-  transform: scale(1.05); 
-  transition: background 0.2s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+  box-shadow: 0px 1px 0px 1px (255, 255, 255, 0.3);
+  transform: scale(1.05);
+  transition: background 0.2s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
   cursor: grab;
   padding: 0.3px;
 }
@@ -121,7 +130,7 @@ padding-bottom: 80px;
 .card-med h2 {
   font-weight: 700;
   font-size: 22px;
- padding-top: 25px;
+  padding-top: 25px;
 
   text-align: center;
   padding-bottom: 35px;
@@ -133,11 +142,11 @@ padding-bottom: 80px;
   text-align: center;
 }
 
-.arrow-two-s{
+.arrow-two-s {
   padding-left: 30px;
 }
 
-.arrow-one-s{
+.arrow-one-s {
   padding-right: 110px;
 }
 
@@ -147,47 +156,65 @@ padding-bottom: 80px;
   color: #193579;
 }
 
-.car-service-cards-heading{
+.car-service-cards-heading {
   text-align: center;
   font-size: 70px;
 }
 
-.car-service-cards{
+.car-service-cards {
   padding-bottom: 5px;
 }
 
-.car-heading-custom{
+.car-heading-custom {
   font-size: 20px;
   font-weight: 800;
 }
 
-  @media (max-width: 460px) {
-    .car-service-cards-bold{
-      padding-bottom: 10px;
-    }
-  
-    .car-service-cards-heading{
-      text-align: center;
-      font-size: 35px;
-    }
-  
-    .card-med {
-      scroll-snap-align: start;
-      height: 390px;
-      cursor: grab;
-      min-width: 320px;
-      box-shadow: 0px 0px 20px rgba(85, 85, 85, 0.4);
-      border: none;
-      border-radius: 0px;
-    }
+@media (max-width: 460px) {
+  .car-service-cards-bold {
+    padding-bottom: 10px;
+  }
 
-    .carousel-servicess{
-      display: flex;
-      grid-auto-flow: column;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      margin: 0;
-        list-style: none;
-    }
+  .car-service-cards-heading {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .card-med {
+    scroll-snap-align: start;
+    height: 390px;
+    cursor: grab;
+    min-width: 320px;
+    box-shadow: 0px 0px 20px rgba(85, 85, 85, 0.4);
+    border: none;
+    border-radius: 0px;
+  }
+
+  .carousel-servicess {
+    display: flex;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-med {
+    width: 463px;
+  }
+
+}
+@media (min-width: 1600px) {
+  .card-med {
+    width: 600px;
+  }
+
+}
+
+.service-swiper-wrapper{
+  max-width: 93%;
+  margin: 0 auto;
 }

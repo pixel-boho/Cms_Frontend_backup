@@ -63,7 +63,7 @@ const Highlights = () => {
           </div>
           {highlightsData.map((highlight, index) => (
             <div
-              className={`swiper-slide ${
+              className={`swiper-slide-higlight ${
                 index === currentIndex ? "active" : ""
               }`}
               key={index}
