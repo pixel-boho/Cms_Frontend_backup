@@ -11,16 +11,15 @@ const SlidePrevButton = () => {
   return (
     <button
       type="button"
-      className=" outline-none border-0 bg-transparent me-4"
-      style={{ width: "50px", height: "50px" }}
+      className=" outline-none  bg-transparent me-4 "
+      style={{
+        borderRadius: "50%",
+        border: "1px solid #00000052",
+        padding: "6px 10px",
+      }}
       onClick={() => swiper.slidePrev()}
     >
-      <img
-        src="/images/black-circle-left-arrow.png"
-        className="car-bi bi-arrow-left-circle-fill arrow-icon"
-        style={{ width: "40px" }}
-        alt="Left Arrow"
-      />
+      <i class="bi bi-arrow-left"></i>
     </button>
   );
 };
@@ -29,15 +28,15 @@ const SlideNextButton = () => {
   return (
     <button
       type="button"
-      className="outline-none border-0 bg-transparent"
+      className="outline-none  bg-transparent"
       onClick={() => swiper.slideNext()}
+      style={{
+        borderRadius: "50%",
+        border: "1px solid #00000052",
+        padding: "6px 10px",
+      }}
     >
-      <img
-        src="/images/black-circle-right-arrow.png"
-        className="car-bi bi-arrow-right-circle-fill arrow-icon"
-        style={{ width: "40px" }}
-        alt="Right Arrow"
-      />
+      <i class="bi bi-arrow-right"></i>
     </button>
   );
 };

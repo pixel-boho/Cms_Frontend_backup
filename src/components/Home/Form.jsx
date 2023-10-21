@@ -89,7 +89,7 @@ const Form = (props) => {
                     placeholder="Your Message"
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary btn-custom">
+                <button type="submit" className="btn   get-a-quote-btn">
                   Get A Quote
                 </button>
               </form>

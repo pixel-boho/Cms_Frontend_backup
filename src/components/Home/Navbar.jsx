@@ -67,7 +67,7 @@ const Burger = styled.button`
       opacity: 1;
       transform: rotate(41deg);
       width: 50%;
-      top: -29px;
+      top: -31px;
       background: #ffffff;
       left: 60px;
       z-index: 2;
@@ -273,7 +273,6 @@ const Navbar = () => {
     }
   };
 
-  const [isVisible, setIsVisible] = useState(false);
 
 
   return (
@@ -461,26 +460,26 @@ const Navbar = () => {
                   <a href="/oman" style={{ fontSize: "15px" }}>
                     Oman
                   </a>
-                  <img src="images/nav-line.png"></img>
+                  <img src="images/nav-line.png" alt=""/>
                 </div>
                 <div>
                   <a href="/uae" style={{ fontSize: "15px" }}>
                     UAE
                   </a>
-                  <img src="images/nav-line.png"></img>
+                  <img src="images/nav-line.png" alt=""/>
                 </div>
                 <div>
                   <a href="/qatar" style={{ fontSize: "15px" }}>
                     Qatar
                   </a>
-                  <img src="images/nav-line.png"></img>
+                  <img src="images/nav-line.png" alt=""/>
                 </div>
                 <div>
                   <a href="/saudi" style={{ fontSize: "15px" }}>
                     Saudi Arabia
                   </a>
                 </div>
-                <img src="images/nav-line.png"></img>
+                <img src="images/nav-line.png" alt=""/>
               </ul>
             )}
           </li>

@@ -13,7 +13,7 @@
   border-radius: 50%;
   cursor: pointer;
   padding: 10px 15px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .floating-top-btn:hover {
@@ -26,4 +26,18 @@
   background: white;
   border: 1px solid rgba(128, 128, 128, 0.105);
   padding: 15px 20px;
+}
+
+.get-a-qoute-floating {
+  background: #2044a2;
+  padding: 20px 50px;
+  border: none;
+  outline: none;
+  /* rotate: -90deg; */
+  color: white;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+  transform:  translateX(-50%);
 }

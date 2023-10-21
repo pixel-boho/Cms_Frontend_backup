@@ -63,16 +63,20 @@ const Differentiators = (props) => {
   const secondRowItems = items.slice(5, 10);
 
   return (
-    <div className="container diffs-containers" style={{marginBottom:"100px"}}>
+    <div
+      className="container diffs-containers"
+      style={{ marginBottom: "100px" }}
+    >
       <div className="row text-center">
         <p className="feature-text pt-4"></p>
         <h1 className="differentiators-header">Key Differentiators</h1>
         <p className="differentiators-description pb-5">
           ALSI stands out through a combination of expertise, reliability, and
           flexibility. Our deep industry knowledge, commitment to meeting
-          deadlines, and adaptability to changing market dynamics make us the preferred
-          choice for all your logistics needs We're not just a service provider; we're your trusted partner
-          in streamlining your supply chain and achieving your business goals.
+          deadlines, and adaptability to changing market dynamics make us the
+          preferred choice for all your logistics needs We're not just a service
+          provider; we're your trusted partner in streamlining your supply chain
+          and achieving your business goals.
         </p>
       </div>
 
@@ -121,20 +125,33 @@ const Differentiators = (props) => {
             <h6 className="diff-sem-parag">{items[currentIndex].title}</h6>
           </div>
         </div>
-        <div className="justify-content-center d-flex d-lg-none pt-4">
-          <img
-            style={{ width: "40px", paddingRight: "5px" }}
-            src="/images/black-circle-left-arrow.png"
-            onClick={handlePreviousClick}
-            disabled={currentIndex === 0}
-          />
-          {/* Next button */}
-          <img
-            style={{ width: "40px", paddingLeft: "5px" }}
-            src="/images/black-circle-right-arrow.png"
+        <div className="mt-4 justify-content-center d-flex align-items-center d-lg-none pt-4">
+          <button
+            type="button"
+            className=" outline-none  bg-transparent me-4 "
+            style={{
+              borderRadius: "50%",
+              border: "1px solid #00000052",
+              padding: "6px 10px",
+            }}
             onClick={handleNextClick}
-            disabled={currentIndex === items.length - 1}
-          />
+            disabled={currentIndex === 0}
+          >
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button
+            type="button"
+            className=" outline-none  bg-transparent "
+            style={{
+              borderRadius: "50%",
+              border: "1px solid #00000052",
+              padding: "6px 10px",
+            }}
+            onClick={handleNextClick}
+            disabled={currentIndex === 0}
+          >
+            <i class="bi bi-arrow-right"></i>
+          </button>
         </div>
       </div>
     </div>
