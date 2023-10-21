@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal } from "react-bootstrap";
+import Modal from "../Modal/Modal";
 
 const GetAQuote = () => {
   const [showModal, setShowModal] = useState(false);
@@ -44,29 +44,29 @@ const GetAQuote = () => {
   };
   return (
     <div>
-      {/* <div onClick={handleModalOpen}> */}
-        <button type="button" class="get-a-qoute-floating">
-            Get A Quote
-        </button>
-      {/* </div> */}
+      <div className="get-a-qoute" onClick={handleModalOpen}>
+        <img src="./images/get-a-quote.png" alt="Get a Quote" />
+      </div>
       {/* Render the modal */}
       <Modal show={showModal} handleClose={handleModalClose}>
         {!formSubmitted ? (
           // Display the form if it has not been submitted
-          <div className="container-fluid container-g-q">
+          <div className="container-fluid container-g-q" style={{padding:"25px"}}>
+            <div className="row">
+              <h4
+                style={{
+                  color: "white",
+                 
+                  fontWeight: "800",
+                }}
+              >
+                Get a Quote
+              </h4>
+            </div>
             <form className="form-container-g-q" onSubmit={handleSubmit}>
               <div className="row">
-                <h4
-                  style={{
-                    color: "white",
-                    padding: "25px",
-                    fontWeight: "800",
-                  }}
-                >
-                  Get a Quote
-                </h4>
                 {/* Name */}
-                <div className="col-lg-6 col-md-6 form-field3 mb-3">
+                <div className="col-lg-6 col-md-6  mb-3">
                   <label htmlFor="name" className="form-label-g-q">
                     Name*
                   </label>
@@ -82,7 +82,7 @@ const GetAQuote = () => {
                   />
                 </div>
                 {/* Phone Number */}
-                <div className="col-lg-6 col-md-6 mb-3 form-field4">
+                <div className="col-lg-6 col-md-6 mb-3">
                   <label htmlFor="phonenumber" className="form-label-g-q">
                     Phone Number*
                   </label>
@@ -120,7 +120,7 @@ const GetAQuote = () => {
               <div className="row pb-4 gq-textarea">
                 <div className="col-lg-12 col-md-12">
                   <div className="mb-3">
-                    <label htmlFor="message" className="form-label-g-q">
+                    <label htmlFor="message" className="form-label-g-q mb-2">
                       Message*
                     </label>
                     <textarea
@@ -133,10 +133,7 @@ const GetAQuote = () => {
                       placeholder="Your Message"
                     ></textarea>
                   </div>
-                  <button
-                    type="submit"
-                    className="btn btn-primary btn-custom-g-q"
-                  >
+                  <button type="submit" className="btn btn   get-a-quote-btn">
                     Get A Quote
                   </button>
                 </div>

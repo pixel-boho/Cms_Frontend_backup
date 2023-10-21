@@ -134,8 +134,8 @@ const Differentiators = (props) => {
               border: "1px solid #00000052",
               padding: "6px 10px",
             }}
-            onClick={handleNextClick}
-            disabled={currentIndex === 0}
+            onClick={handlePreviousClick}
+            // disabled={currentIndex === 0}
           >
             <i class="bi bi-arrow-left"></i>
           </button>
@@ -148,7 +148,7 @@ const Differentiators = (props) => {
               padding: "6px 10px",
             }}
             onClick={handleNextClick}
-            disabled={currentIndex === 0}
+            // disabled={currentIndex === 0}
           >
             <i class="bi bi-arrow-right"></i>
           </button>
