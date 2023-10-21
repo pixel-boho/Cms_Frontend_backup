@@ -1,0 +1,10 @@
+.secondblog .secondblog-recent-clr-bg {
+  background-color: rgb(239, 239, 239);
+  padding-bottom: 40px;
+}
+
+@media (max-width: 460px) {
+  .secondblog .secondblog-recent-clr-bg {
+    padding-bottom: 40px;
+  }
+}

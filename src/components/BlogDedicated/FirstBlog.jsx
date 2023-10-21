@@ -45,8 +45,8 @@ const FirstBlog = () => {
     });
   };
   return (
-    <div className="container-custom">
-      <div className="row">
+    <div className="container-custom mx-auto">
+      <div className="row w-100">
         <div className="col-lg-6 ">
           <div className="">
             <p className="centered-clr-text">
@@ -95,7 +95,7 @@ const FirstBlog = () => {
             </h6>
             <i className="bi-blog-compliance" style={{ fontStyle: "normal" }}>
               <p className="blog-compliance-p">
-                Adhere to the unique “free trade zone customs procedures in GCC
+                Adhere to the un`ique “free trade zone customs procedures in GCC
                 countries” that cater to the specific country’s trade laws
               </p>
             </i>
@@ -159,23 +159,25 @@ const FirstBlog = () => {
           </div>
         </div>
 
-        <div className="col-lg-6 col-lg-5 recent-clr-bg">
-          <div className="row">
-            <div className="col-lg">
-              <h5 className="recent-head" style={{ fontWeight: "800" }}>
-                Recent Posts
-              </h5>
+        <div
+          className=" col-lg-6 "
+          style={{ backgroundColor: "rgb(239, 239, 239)" }}
+        >
+          <div className="row" style={{ padding: "30px" }}>
+            <h5 style={{ fontWeight: "800" }}>Recent Posts</h5>
+
+            <div className="mt-3">
               <img
                 src="/images/Services/Customs_Clearence/recent-one.png"
-                className="recent-image-pad"
-                alt="Recent Post Image"
+                className="w-100"
+                alt="Recent Post "
               />
-              <h6 className="recent-head-one">
+              <h6 className="my-3" style={{ fontWeight: "800" }}>
                 Smooth sailing through customs clearance in Oman: A guide to
                 ensuring compliance, avoiding penalties, and navigating
                 potential pitfalls
               </h6>
-              <p className="recent-parag">
+              <p style={{ fontSize: "12px" }}>
                 When it comes to international trade and business operations,
                 efficient and compliant customs clearance is crucial. For
                 businesses operating in Oman, understanding the customs
@@ -189,58 +191,23 @@ const FirstBlog = () => {
               <a
                 href=""
                 className="recent-read"
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", padding: 0 }}
               >
                 Read More
               </a>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-lg">
+            <div className="mt-3">
               <img
                 src="/images/Services/Customs_Clearence/recent-two.png"
-                className="recent-image-pad"
-                alt="Recent Post Image"
+                className="w-100"
+                alt="Recent Post "
               />
-              <h6 className="recent-head-one">
-                The digital transformation of customs clearance and how
-                technology is transforming the process
-              </h6>
-              <p className="recent-parag">
-                Customs clearance is essential to ensure the smooth flow of
-                products across borders in the fast-paced world of international
-                trade. A game-changer, the digital transformation of customs
-                clearance has streamlined procedures, increased efficiency, and
-                decreased delays. This blog examines how technology is reshaping
-                customs clearance to the advantage of shipping and logistics
-                businesses in Oman and elsewhere. Join us as we explore the
-                cutting-edge innovations that are changing the customs clearing
-                landscape, from digitalized documentation to cutting-edge
-                tracking technology.
-              </p>
-              <a
-                href=""
-                className="recent-read"
-                style={{ textDecoration: "none" }}
-              >
-                Read More
-              </a>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-lg">
-              <img
-                src="/images/Services/Customs_Clearence/recent-three.png"
-                className="recent-image-pad"
-                alt="Recent Post Image"
-              />
-              <h6 className="recent-head-one">
+              <h6 className="my-3" style={{ fontWeight: "800" }}>
                 The impact of UAE-Oman transportation on trade and commerce to
                 driving economic growth
               </h6>
-              <p className="recent-parag">
+              <p style={{ fontSize: "12px" }}>
                 In today’s global economy, businesses are always looking for
                 ways to expand their reach and increase profits. One of the key
                 factors in achieving this is efficient transportation and
@@ -261,7 +228,37 @@ const FirstBlog = () => {
               <a
                 href=""
                 className="recent-read"
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", padding: 0 }}
+              >
+                Read More
+              </a>
+            </div>
+            <div className="mt-3">
+              <img
+                src="/images/Services/Customs_Clearence/recent-two.png"
+                className="w-100"
+                alt="Recent Post "
+              />
+              <h6 className="my-3" style={{ fontWeight: "800" }}>
+                The digital transformation of customs clearance and how
+                technology is transforming the process
+              </h6>
+              <p style={{ fontSize: "12px" }}>
+                Customs clearance is essential to ensure the smooth flow of
+                products across borders in the fast-paced world of international
+                trade. A game-changer, the digital transformation of customs
+                clearance has streamlined procedures, increased efficiency, and
+                decreased delays. This blog examines how technology is reshaping
+                customs clearance to the advantage of shipping and logistics
+                businesses in Oman and elsewhere. Join us as we explore the
+                cutting-edge innovations that are changing the customs clearing
+                landscape, from digitalized documentation to cutting-edge
+                tracking technology.
+              </p>
+              <a
+                href=""
+                className="recent-read"
+                style={{ textDecoration: "none", padding: 0 }}
               >
                 Read More
               </a>
@@ -269,7 +266,7 @@ const FirstBlog = () => {
           </div>
         </div>
       </div>
-      <div className="row mt-4">
+      <div className="row mt-4 w-100">
         <div className="col-12">
           <div className="">
             <img

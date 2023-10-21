@@ -61,7 +61,7 @@ function Network() {
             Our Global Network
           </h1>
         </div>
-        <div className="col-12 " style={{ paddingTop: "90px", height: "100%"}}>
+        <div className="col-12  map-wrapper" >
           <div
             className="map-container"
             id="map-container"

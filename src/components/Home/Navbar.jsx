@@ -442,7 +442,7 @@ const Navbar = () => {
                 alignItems: "center",
               }}
             >
-              Global Network
+              Our Network
               <i
                 className="bi bi-chevron-down"
                 style={{

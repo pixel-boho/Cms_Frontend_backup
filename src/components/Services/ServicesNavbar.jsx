@@ -67,7 +67,7 @@ const ServicesNavbar = () => {
       ],
     },
     {
-      text: "Global Network",
+      text: "Our Network",
       children: [
         {
           text: "Oman",

@@ -252,7 +252,7 @@ const FirstBlogHeader = () => {
         </Modal>
       </div>
 
-      <div className="container-fluid">
+      <div className="container-custom mx-auto">
         <div className="row ">
           <div className="col-lg-12 firsts-blog-txt-pad px-4">
             <p className="firsts-blog-text-nav">
