@@ -57,7 +57,7 @@ const AboutCertified = () => {
             <div className={`row ${styles.cerifiedImgRow}`}>
               <img
                 src="/images/Certified/ISOLogo.jpg"
-                style={{ width: "42%" }}
+                style={{ width: "41%" }}
                 alt=""
               />
             </div>

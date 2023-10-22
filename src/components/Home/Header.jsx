@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../css/Header.module.scss";
 import Modal from "./../Modal/Modal";
+import GetAQuote from "../GetAQuote";
 import "./../../css/ModalCss/GetQuote.css";
 import headerImage from "../../images/Landing Page image.jpg";
 const Header = () => {
@@ -93,125 +94,12 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div onClick={handleModalOpen}>
-          <img
-            src="/images/get-a-quote.png"
-            className={styles["home-quote-direct"]}
-            alt=""
-            style={{ top: "50%", padding: 0, transform: "translateY(-50%)" }}
-          />
-        </div>
         {/* Render the modal */}
-        <Modal show={showModal} handleClose={handleModalClose}>
-          {!formSubmitted ? (
-            // Display the form if it has not been submitted
-            <div className="container-fluid container-g-q">
-              <form className="form-container-g-q" onSubmit={handleSubmit}>
-                <div className="row">
-                  <h4
-                    style={{
-                      color: "white",
-                      padding: "25px",
-                      fontWeight: "800",
-                    }}
-                  >
-                    Get a Quote
-                  </h4>
-                  {/* Name */}
-                  <div className="col-lg-6 col-md-6 form-field3 mb-3">
-                    <label htmlFor="name" className="form-label-g-q">
-                      Name*
-                    </label>
-                    <input
-                      type="text"
-                      className="form-control-g-q transparent-input-g-q"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Enter first and last name"
-                      required
-                    />
-                  </div>
-                  {/* Phone Number */}
-                  <div className="col-lg-6 col-md-6 mb-3 form-field4">
-                    <label htmlFor="phonenumber" className="form-label-g-q">
-                      Phone Number*
-                    </label>
-                    <input
-                      type="text"
-                      className="form-control-g-q transparent-input-g-q"
-                      id="phonenumber"
-                      name="phonenumber"
-                      value={formData.phonenumber}
-                      onChange={handleInputChange}
-                      placeholder="Eg. 123-456-7890"
-                      required
-                    />
-                  </div>
-                </div>
-                {/* Email */}
-                <div className="row">
-                  <div className="col-lg-12 col-md-12 mb-3">
-                    <label htmlFor="email" className="form-label-g-q">
-                      Email*
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control-g-q transparent-input-g-q"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="Eg. youremail@example.com"
-                      required
-                    />
-                  </div>
-                </div>
-                {/* Message */}
-                <div className="row pb-4 gq-textarea">
-                  <div className="col-lg-12 col-md-12">
-                    <div className="mb-3">
-                      <label htmlFor="message" className="form-label-g-q">
-                        Message*
-                      </label>
-                      <textarea
-                        className="form-control-g-q transparent-input-g-q"
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                        placeholder="Your Message"
-                      ></textarea>
-                    </div>
-                    <button
-                      type="submit"
-                      className="btn btn-primary btn-custom-g-q"
-                    >
-                      Get A Quote
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          ) : (
-            // Display a thank you message if the form has been submitted
-            <div className="thank-you-message">
-              <h4
-                style={{
-                  color: "white",
-                  textAlign: "center",
-                  fontWeight: 800,
-                  padding: "30px 10px 30px 10px",
-                }}
-              >
-                Thank you for your enquiry!
-              </h4>
-            </div>
-          )}
-        </Modal>
       </div>
+      <div className="container-fluid">
+        <div className="col-lg-12 col-sm col-md "></div>
+      </div>
+      <GetAQuote />
     </div>
   );
 };

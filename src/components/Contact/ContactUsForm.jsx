@@ -20,10 +20,6 @@ const ContactUsForm = () => {
       <div className="row">
         <div className="col-lg-6 contact-us-arrange">
           <h1 className="contact-us-heads">Let's connect and talk</h1>
-          <p className="contact-us-paragh">
-            We're eager to hear from you! At ALSI, we value open
-            communication...
-          </p>
         </div>
         <div className="col-lg-6 contact-us-split-form">
           {isSubmitted ? (

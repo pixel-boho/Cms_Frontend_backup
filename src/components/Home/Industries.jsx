@@ -13,7 +13,7 @@ const SlideNextBtn = () => {
       className="outline-none border-0 bg-transparent"
     >
       <img
-        style={{ width: "55px", paddingRight: "5px" }}
+        style={{ width: "45px", paddingRight: "5px" }}
         src="/images/black-circle-left-arrow.png"
         alt=""
       />
@@ -30,7 +30,7 @@ const SlidePrevBtn = () => {
       className="outline-none border-0 bg-transparent"
     >
       <img
-        style={{ width: "55px", paddingLeft: "5px" }}
+        style={{ width: "45px", paddingLeft: "5px" }}
         src="/images/black-circle-right-arrow.png"
         alt=""
       />
@@ -120,14 +120,14 @@ const Industries = () => {
       title: "Oil & Gas",
       image: "images/Industries/ind1.png",
       description:
-        " We understand the critical nature of the oil and gas industry. With a focus on safety, precision, and efficiency, we offer specialized logistics solutions tailored to this sector's unique demands. From transporting equipment to managing project cargo, ALSI is your trusted partner in ensuring seamless operations within the oil and gas sector.<br/>",
+        " We understand the critical nature of the oil and gas industry. With a focus on safety, precision, and efficiency, we offer specialized logistics solutions tailored to this sector's unique demands. From transporting equipment to managing project cargo, ALSI is your trusted partner in ensuring seamless operations within the oil and gas sector.",
     },
     {
       id: "2",
       title: "Food & Beverages",
       image: "images/Industries/ind2.png",
       description:
-        "In the fast-paced world of Food and Beverage, we provide reliable logistics solutions to keep your products fresh and on time. Our temperature-controlled warehousing, efficient transportation, and expertise in handling delicate cargo make us the ideal partner for F&B businesses.<br/><br/>",
+        "In the fast-paced world of Food and Beverage, we provide reliable logistics solutions to keep your products fresh and on time. Our temperature-controlled warehousing, efficient transportation, and expertise in handling delicate cargo make us the ideal partner for F&B businesses.",
     },
     {
       id: "3",
@@ -141,7 +141,7 @@ const Industries = () => {
       title: "Retail",
       image: "images/Industries/ind4.png",
       description:
-        " In the dynamic world of retail, we deliver tailored logistics solutions that meet your specific needs. Whether it's optimizing inventory management, ensuring just-in-time deliveries, or providing efficient warehousing and distribution, ALSI is your partner for success.<br/><br/><br/>",
+        " In the dynamic world of retail, we deliver tailored logistics solutions that meet your specific needs. Whether it's optimizing inventory management, ensuring just-in-time deliveries, or providing efficient warehousing and distribution, ALSI is your partner for success.",
     },
     {
       id: "5",
@@ -162,7 +162,7 @@ const Industries = () => {
       title: "Healthcare",
       image: "images/Industries/HealthcareLogistics.png",
       description:
-        "In the critical field of pharma and healthcare, we are dedicated to ensuring the safe and timely delivery of medical supplies, pharmaceuticals, and healthcare equipment. Our specialized logistics solutions adhere to the highest standards of compliance and precision.</br><br/>",
+        "In the critical field of pharma and healthcare, we are dedicated to ensuring the safe and timely delivery of medical supplies, pharmaceuticals, and healthcare equipment. Our specialized logistics solutions adhere to the highest standards of compliance and precision.",
     },
     {
       id: "8",
@@ -176,7 +176,7 @@ const Industries = () => {
       title: "Manufacturing",
       image: "images/Industries/ManufacturingLogistics.png",
       description:
-        "In the world of manufacturing, we offer tailored logistics solutions to optimize your production processes. From just-in-time delivery of raw materials to efficient distribution of finished products, we enhance your supply chain's efficiency and reduce costs.Making us your trusted logistics partner for seamless operations.<br/><br/>",
+        "In the world of manufacturing, we offer tailored logistics solutions to optimize your production processes. From just-in-time delivery of raw materials to efficient distribution of finished products, we enhance your supply chain's efficiency and reduce costs.Making us your trusted logistics partner for seamless operations.",
     },
   ];
 
@@ -190,7 +190,7 @@ const Industries = () => {
         {/* <Row className="indus-space-adjust market-page-one"> */}
         <Swiper
           spaceBetween={0}
-          slidesPerView={"auto"}
+          
           centeredSlides={true}
           autoplay={{
             delay: 2000,
@@ -199,13 +199,28 @@ const Industries = () => {
           loop={true}
           navigation={false}
           modules={[Autoplay]}
-          className="mySwiper"
+          className="industries"
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            
+          }}
         >
           {industries.map((industry) => (
             <SwiperSlide lg key={industry.id}>
               <Card
                 className="card-scrollll card-indus"
-                style={{ width: "330px" }}
+                style={{ width: "330px", height: "600px" }}
                 onMouseEnter={handleCardMouseEnter}
                 onMouseLeave={handleCardMouseLeave}
               >
@@ -214,22 +229,26 @@ const Industries = () => {
                     className="card-title-indus pb-3"
                     dangerouslySetInnerHTML={{ __html: industry.title }}
                   />
-                  <Card.Text
-                    className="card-text-indus"
-                    dangerouslySetInnerHTML={{ __html: industry.description }}
-                  />
-                  <a className="indus-count-num-hover">
+                  <div style={{ height: "45%" }}>
+                    <Card.Text
+                      className="card-text-indus "
+                      dangerouslySetInnerHTML={{ __html: industry.description }}
+                    />
+                  </div>
+                  {/* <a className="indus-count-num-hover"> */}
+                  <div className="position-relative">
                     <Card.Img
                       src={industry.image}
                       alt="..."
                       className="card-img-top-indus"
                     />
-                  </a>
-                  <div
-                    className="indus-count-num"
-                    style={{ fontWeight: "600" }}
-                  >
-                    {industry.id}
+                    {/* </a> */}
+                    <div
+                      className="indus-count-num"
+                      style={{ fontWeight: "600" }}
+                    >
+                      {industry.id}
+                    </div>
                   </div>
                 </Card.Body>
               </Card>

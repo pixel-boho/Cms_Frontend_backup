@@ -3,17 +3,17 @@ import styles from "./../../css/Footer.module.scss";
 
 const Footer = (props) => {
   return (
-    <div className={`container-fluid ${styles["footer-head"]} pt-5`}>
+    <div className={`container-fluid ${styles["footer-head"]}`}>
       <div className="row">
         <div className="col-lg-12">
           <div className="row">
             <div
               className={`col-lg-12 text-center ${styles["footer-head-logo"]}`}
             >
-              <img src="images/nav_logo.png" alt="" />
+              <img src="images/nav_logo.png"  alt="" />
             </div>
           </div>
-          <div className={`row m-5 ${styles["center-content"]}`}>
+          <div className={`row m-4 ${styles["center-content"]}`}>
             <div className="col-lg-3">
               <h6>Oman Head Office</h6>
               <p>

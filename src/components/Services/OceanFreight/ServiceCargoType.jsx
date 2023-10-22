@@ -5,17 +5,28 @@ import "./../../../css/ServicesCss/ServiceCargoType.css";
 
 function ServiceCargoType() {
   return (
+<<<<<<< Updated upstream
     <>
       <Container fluid className="container-offcs-type-serv">
         <h3 className="main-title-offcs-type-serv">
           Types of Cargo We Handle
           <br /> for Ocean Freight
         </h3>
+=======
+    <div className="sea-freight-container">
+      <Container fluid className="position-relative">
+        <div className="container-cc-type-serv">
+          <h3 className="main-title-cc-type-serv pt-3 pb-3">
+            Types Of Cargo We Handle For Ocean Freight
+          </h3>
+        </div>
+>>>>>>> Stashed changes
         <img
           className="bg-main-img"
           src="images/CargoService/cargo-mixed.png"
           alt=""
         />
+<<<<<<< Updated upstream
         <Row className="card-offcs-type-serv">
           <Col md={4}>
             <Card className="card-child">
@@ -138,6 +149,112 @@ function ServiceCargoType() {
         </Row>
       </Container>
     </>
+=======
+        <div className="container-cc-type-serv">
+          <div className="card-cc-type-serv row">
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/AirFreight/General.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>
+                    General
+                    <br />
+                    <br />
+                  </Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/AirFreight/PerishablesandTemperatureControlled.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>
+                    Dangerous Goods
+                    <br />
+                    <br />
+                  </Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/OceanFreight/DangerousGoods.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Perishables & Temperature Controlled</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </div>
+        </div>
+
+        <div className="container-cc-type-serv air-freight-second">
+          <Col xs={12}>
+            <h3 className="main-title-cc-type-serv  text-xs-white pt-3 pb-3">
+              Types Of Ocean Freight Services We Offer
+            </h3>
+          </Col>
+          <div className="card-cc-type-serv row">
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/AirFreight/Deferred.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>
+                    Full Container Load (FCL)
+                    <br />
+                    <br />
+                  </Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/AirFreight/Consolidation.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Less than Container Load (LCL)</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/AirFreight/Back-to-Back.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>
+                    RORO
+                    <br />
+                    <br />
+                  </Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </div>
+        </div>
+      </Container>
+    </div>
+>>>>>>> Stashed changes
   );
 }
 

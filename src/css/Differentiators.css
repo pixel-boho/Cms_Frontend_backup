@@ -2,8 +2,8 @@
   font-size: 28px;
 }
 
-.differentiators-header {
-  padding-bottom: 30px;
+.differentiators-header-set {
+  padding-bottom: 25px;
   font-size: 60px;
 }
 
@@ -13,7 +13,7 @@ padding-right: 90px;
 }
 
 .differentiators-row {
-  padding-bottom: 90px;
+  padding-bottom: 20px;
   padding-left: 4px;
 }
 
@@ -93,7 +93,7 @@ padding-right: 90px;
     flex-direction: column;
   }
 
-  .differentiators-header {
+  .differentiators-header-set {
     padding-bottom: 1rem;
     font-size: 35px;
   }
@@ -152,7 +152,7 @@ font-size: 14px;
     flex-direction: column;
   }
 
-  .differentiators-header {
+  .differentiators-header-set {
     padding-bottom: 1rem;
     font-size: 30px;
   }

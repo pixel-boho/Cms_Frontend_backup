@@ -5,6 +5,7 @@
   background-image:
     url("../../../public/images/BlogBanner/CustomsClearance01.jpg");
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .twitter-new{
@@ -33,14 +34,13 @@
 
 .custom-clr-text1 {
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 16px;
   width: 80%;
   padding-left: 300px;
 }
-
 /* nav-bg text */
 .custom-clr-text-nav {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 800;
   border: 1px solid rgb(239, 239, 239);
   background-color: rgb(239, 239, 239);
@@ -66,6 +66,9 @@
     font-size: 23px;
     font-weight: 650;
 }
+.date-time-fix{
+  display: none
+      }
   }
 
 .custom-clr-txt-pad{
@@ -97,7 +100,7 @@ padding-right: 100px;
   margin-left: 17px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 459px) {
   .custom-clr-quote-img img {
     width: 30px;
     padding-top: 100px;
@@ -119,7 +122,7 @@ padding-right: 100px;
     height: 300px;
     background-size: cover;
     background-image: linear-gradient(rgba(75, 75, 75, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/Customs_Clearence/vecteezy_container-cargo-ship-in-ocean-at-sunset-dramatic-sky_21660298_833.png");
+    url("../../../public/images/BlogBanner/CustomsClearance01.jpg");
   background-position: bottom;
     margin-bottom: 15px;
   }
@@ -131,9 +134,12 @@ padding-right: 100px;
   }
 
   .date-time-fix{
-    display: none
-        }
-        
+    color: rgb(216, 216, 216);
+    padding-top: 70px;
+    padding-left: 110px;
+    font-size: 13px;
+    
+  }
   .date-fixx-icon img {
 display: hidden;
   }

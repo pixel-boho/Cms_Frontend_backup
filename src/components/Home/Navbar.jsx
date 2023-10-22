@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "./../../css/Navbar.css";
@@ -67,14 +67,14 @@ const Burger = styled.button`
       opacity: 1;
       transform: rotate(41deg);
       width: 50%;
-      top: -29px;
+      top: -31px;
       background: #ffffff;
       left: 60px;
       z-index: 2;
       position: absolute;
       @media (max-width: 768px) {
         left: 15px;
-        top: -28px;
+        top: -32px;
       }
 
       @media (max-width: 360px) {
@@ -125,7 +125,7 @@ const Sidemenu = styled.div`
   }
 
   ul {
-    padding: 3.2rem;
+    padding: 4.1rem;
     @media (max-width: 360px) {
       padding: 6rem;
     }
@@ -135,7 +135,7 @@ const Sidemenu = styled.div`
       transition: all 0.5s cubic-bezier(0.04, 0.79, 0.34, 1.3);
       a {
         color: ${sidemenuLink};
-        font-weight: 200;
+        font-weight: 400;
         text-decoration: none;
         padding: 0px;
         font-size: 18px;
@@ -195,7 +195,7 @@ const NavbarContainer = styled.nav`
 `;
 
 const LogoImage = styled.img`
-  width: 70px;
+  width: 80px;
   height: auto;
   z-index: 0;
 
@@ -209,6 +209,7 @@ const LogoImage = styled.img`
 `;
 
 const Navbar = () => {
+  const [scroll, setScroll] = useState(0);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [globalNetworkDropdownOpen, setGlobalNetworkDropdownOpen] =
     useState(false);
@@ -220,12 +221,12 @@ const Navbar = () => {
   const socialIconStyle = {
     display: "flex",
     zIndex: "1",
-    marginRight: "90px",
+    marginRight: "50px",
     paddingBottom: "10px",
   };
 
   if (window.innerWidth <= 460) {
-    socialIconStyle.marginRight = "36px";
+    socialIconStyle.marginRight = "19px";
     socialIconStyle.paddingBottom = "2px";
   }
 
@@ -258,6 +259,22 @@ const Navbar = () => {
       fontSize: "10px",
     },
   };
+
+  const toTop = () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      // mybutton.style.display = "block";
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0;
+    } else {
+      // mybutton.style.display = "none";
+    }
+  };
+
+
+
   return (
     <>
       <ul className="nav justify-content-end mt-3 navbar-pos">
@@ -424,7 +441,7 @@ const Navbar = () => {
                 alignItems: "center",
               }}
             >
-              Global Network
+              Our Network
               <i
                 className="bi bi-chevron-down"
                 style={{
@@ -443,26 +460,26 @@ const Navbar = () => {
                   <a href="/oman" style={{ fontSize: "15px" }}>
                     Oman
                   </a>
-                  <img src="images/nav-line.png"></img>
+                  <img src="images/nav-line.png" alt=""/>
                 </div>
                 <div>
                   <a href="/uae" style={{ fontSize: "15px" }}>
                     UAE
                   </a>
-                  <img src="images/nav-line.png"></img>
+                  <img src="images/nav-line.png" alt=""/>
                 </div>
                 <div>
                   <a href="/qatar" style={{ fontSize: "15px" }}>
                     Qatar
                   </a>
-                  <img src="images/nav-line.png"></img>
+                  <img src="images/nav-line.png" alt=""/>
                 </div>
                 <div>
                   <a href="/saudi" style={{ fontSize: "15px" }}>
                     Saudi Arabia
                   </a>
                 </div>
-                <img src="images/nav-line.png"></img>
+                <img src="images/nav-line.png" alt=""/>
               </ul>
             )}
           </li>
@@ -546,6 +563,18 @@ const Navbar = () => {
           </ul>
         </div>
       </Sidemenu>
+
+      <button
+        type="button"
+        className={`btn floating-top-btn
+      
+        `}
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </>
   );
 };

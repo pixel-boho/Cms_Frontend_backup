@@ -1,7 +1,6 @@
 /* Left Section */
 .contact-us-arrange {
-  padding-top: 15%;
-
+  padding-top: 5%;
 }
 
 .contact-us-heads {
@@ -13,7 +12,6 @@
   @media (max-width: 460px) {
     font-size: 50px;
     line-height: 65px;
-    
   }
 }
 
@@ -26,7 +24,7 @@
 // Contact us container top padding
 
 .contact-us-split-form {
-  padding-top: 60px;
+  padding-top: 70px;
 
   @media (max-width: 460px) {
     padding-top: 12px;
@@ -41,18 +39,17 @@
   min-height: auto;
   width: 90%;
   padding-top: 20px;
-  padding-bottom: 99px;
+  padding-bottom: 90px;
 
   @media (max-width: 460px) {
     padding-bottom: 45px;
-    
   }
 }
 
 /* Form Styling */
 .contact-us-split-form label {
   color: #000000; /* Change to your desired text color */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   line-height: 50px;
 }
@@ -72,12 +69,14 @@
   font-weight: 500;
 }
 
-.contact-us-split-form input {
+.contact-us-split-form input[type="text"], 
+.contact-us-split-form input[type="email"],
+.contact-us-split-form textarea {
   width: 100%;
-  padding-left: 14px;
+  padding: 14px;
   border-radius: 10px 10px 10px 10px;
   border-color: #d3d3d3;
-  min-height: 50px;
+  // min-height: 50px;
   border: 1px solid #a7a7a7;
 }
 
@@ -86,7 +85,7 @@ textarea {
   height: 150px;
   padding-left: 14px;
   border-radius: 10px 10px 10px 10px;
-  border: 1px solid  #a7a7a7;
+  border: 1px solid #a7a7a7;
 }
 
 @media (max-width: 768px) {

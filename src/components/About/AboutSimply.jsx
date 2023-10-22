@@ -8,9 +8,9 @@ const AboutSimply = () => {
         className={`container-fluid ${styles.containerFluid} ${styles.simplyAboutTop}`}
       >
         <div className="col-lg-12">
-          <div className="row pb-3">
+          <div className="row pb-2">
             <h2 className={styles.simplyAboutHead}>
-              Mission, Vision & Purpose
+              Mission, Vision And Purpose
             </h2>
             <p className={styles.simplyAboutParagh}></p>
           </div>
@@ -22,7 +22,7 @@ const AboutSimply = () => {
           <div className={`col-lg ${styles.simplyAboutBg}`}>
             <img
               src="/images/AboutSimply/commitment.png"
-              className={`col-lg ${styles.simplyAboutBgOne}`}
+              className={`col-lg ${styles.simplyAboutBgOne}`} style={{paddingBottom:"48px"}}
               alt="Image 1"
             />
             <h4 className={`${styles.simplyAboutHeading}`}>Mission</h4>

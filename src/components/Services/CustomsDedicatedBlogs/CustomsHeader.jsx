@@ -243,10 +243,10 @@ const CustomsHeader = () => {
       </div>
 
       <div className="container-fluid">
-        <div className="col-lg-12 custom-clr-txt-pad">
+        <div className="col-lg-12 custom-clr-txt-pad px-4">
           <div className="row custom-clr-text-nav-pad">
             <p className="custom-clr-text-nav">
-            For businesses operating in Oman, understanding the customs clearance <br/>process is a necessity to avoid penalties
+            For businesses operating in Oman, understanding the customs clearance process is a necessity to avoid penalties
             </p>
           </div>
         </div>

@@ -8,7 +8,7 @@ function ClearanceType() {
     <>
       <Container fluid className="position-relative">
         <div className="container-cc-type-serv">
-          <h3 className="main-title-cc-type-serv">
+          <h3 className="main-title-cc-type-serv pb-3">
             Customs Clearance Services
           </h3>
         </div>
@@ -44,13 +44,16 @@ function ClearanceType() {
               </Card>
             </Col>
             <Col md={4}>
-              <Card className="card-child-service">
+            <Card className="card-child-service">
                 <Card.Img
-                  src="images/Clearance/HealthandMedicalGoodsClearance.jpg"
+                  src="images/Clearance/LivestockClearance.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Health and Medical Goods Clearance</Card.Title>
+                  <Card.Title>
+                    Livestock Clearance
+                 
+                  </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -60,6 +63,7 @@ function ClearanceType() {
         <div className="container-cc-type-serv">
           <div className="card-cc-type-serv row">
             <Col md={4}>
+<<<<<<< Updated upstream
               <Card className="card-child-service">
                 <Card.Img
                   src="images/Clearance/LivestockClearance.jpg"
@@ -89,6 +93,9 @@ function ClearanceType() {
             </Col>
             <Col md={4}>
               <Card className="card-child-service">
+=======
+            <Card className="card-child-service">
+>>>>>>> Stashed changes
                 <Card.Img
                   src="images/Clearance/FreeZoneClearance.jpg"
                   className="cc-type-serv-general"
@@ -96,8 +103,39 @@ function ClearanceType() {
                 <Card.Body>
                   <Card.Title>
                     Free Zone Clearance
+<<<<<<< Updated upstream
                     <br />
                     <br />
+=======
+                    
+                  </Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+            <Card className="card-child-service">
+                <Card.Img
+                  src="images/Clearance/DutyExemptionClearance.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Duty Exemption Clearance</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+            <Card className="card-child-service">
+                <Card.Img
+                  src="images/Clearance/TransitClearance.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>
+                    Transit Clearance
+                 
+>>>>>>> Stashed changes
                   </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
@@ -116,7 +154,31 @@ function ClearanceType() {
         <div className="container-cc-type-serv">
           <div className="card-cc-type-serv row">
             <Col md={4}>
-              <Card className="card-child-service">
+            <Card className="card-child-service">
+                <Card.Img
+                  src="images/Clearance/HealthandMedicalGoodsClearance.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Health and Medical Goods Clearance</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+            <Card className="card-child-service">
+                <Card.Img
+                  src="images/Clearance/TemporaryImportandExportClearance.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Temporary Import and Export Clearance</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+            <Card className="card-child-service">
                 <Card.Img
                   src="images/Clearance/FreeTradeAgreement(FTA)Clearance.jpg"
                   className="cc-type-serv-general"
@@ -127,6 +189,7 @@ function ClearanceType() {
                 </Card.Body>
               </Card>
             </Col>
+<<<<<<< Updated upstream
             <Col md={4}>
               <Card className="card-child-service">
                 <Card.Img
@@ -155,11 +218,14 @@ function ClearanceType() {
                 </Card.Body>
               </Card>
             </Col>
+=======
+>>>>>>> Stashed changes
           </div>
         </div>
         <div className="container-cc-type-serv">
           <div className="card-cc-type-serv row">
             <Col md={4}>
+<<<<<<< Updated upstream
               <Card className="card-child-service">
                 <Card.Img
                   src="images/Clearance/On-BoardCourierClearance.jpg"
@@ -178,6 +244,9 @@ function ClearanceType() {
             </Col>
             <Col md={4}>
               <Card className="card-child-service">
+=======
+            <Card className="card-child-service">
+>>>>>>> Stashed changes
                 <Card.Img
                   src="images/Clearance/Cross-Border.jpg"
                   className="cc-type-serv-general"
@@ -185,15 +254,19 @@ function ClearanceType() {
                 <Card.Body>
                   <Card.Title>
                     Cross-Border Clearance (Origin and Destination)
+<<<<<<< Updated upstream
                     <br />
                     <br />
+=======
+                 
+>>>>>>> Stashed changes
                   </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={4}>
-              <Card className="card-child-service">
+            <Card className="card-child-service">
                 <Card.Img
                   src="images/Clearance/PerishablesandTemperatureControlledCargoClearance.jpg"
                   className="cc-type-serv-general"
@@ -202,6 +275,18 @@ function ClearanceType() {
                   <Card.Title>
                     Perishables and Temperature Controlled Cargo Clearance
                   </Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+            <Card className="card-child-service">
+                <Card.Img
+                  src="images/Clearance/DutyDepositRefundProcessing.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Duty Deposit Refund Processing</Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -245,6 +330,8 @@ function ClearanceType() {
                   <Card.Title>
                     Documentation Services: Obtaining Certificate of Origin,
                     Legalisation and Attestation
+                    <br />
+                    <br />
                   </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
@@ -270,13 +357,16 @@ function ClearanceType() {
         <div className="container-cc-type-serv">
           <div className="card-cc-type-serv row">
             <Col md={4}>
-              <Card className="card-child-service">
+            <Card className="card-child-service">
                 <Card.Img
-                  src="images/Clearance/DutyDepositRefundProcessing.jpg"
+                  src="images/Clearance/On-BoardCourierClearance.jpg"
                   className="cc-type-serv-general"
                 />
                 <Card.Body>
-                  <Card.Title>Duty Deposit Refund Processing</Card.Title>
+                  <Card.Title>
+                    On-Board Courier Clearance
+                  
+                  </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
               </Card>
@@ -287,7 +377,7 @@ function ClearanceType() {
 
       <Container fluid className="position-relative">
         <div className=" container-cc-type-serv">
-          <h3 className="main-title-cc-type-serv">
+          <h3 className="main-title-cc-type-serv  pb-3 pt-3">
             Locations We Provide Customs Clearance Services in Oman
           </h3>
         </div>
@@ -307,8 +397,12 @@ function ClearanceType() {
                 <Card.Body>
                   <Card.Title>
                     Muscat Airport
+<<<<<<< Updated upstream
                     <br />
                     <br />
+=======
+                 
+>>>>>>> Stashed changes
                   </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
@@ -367,8 +461,12 @@ function ClearanceType() {
                 <Card.Body>
                   <Card.Title>
                     Duqm Port
+<<<<<<< Updated upstream
                     <br />
                     <br />
+=======
+                    
+>>>>>>> Stashed changes
                   </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
@@ -392,7 +490,7 @@ function ClearanceType() {
 
       <Container fluid className="position-relative">
         <div className="container-cc-type-serv">
-          <h3 className="main-title-cc-type-serv">
+          <h3 className="main-title-cc-type-servpt-3 pb-3 pt-3">
             Locations We Provice Customs Clearance Service in UAE
           </h3>
         </div>
@@ -424,8 +522,12 @@ function ClearanceType() {
                 <Card.Body>
                   <Card.Title>
                     Sharjah Port
+<<<<<<< Updated upstream
                     <br />
                     <br />
+=======
+                  
+>>>>>>> Stashed changes
                   </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>
@@ -466,8 +568,12 @@ function ClearanceType() {
                 <Card.Body>
                   <Card.Title>
                     Hatta Border
+<<<<<<< Updated upstream
                     <br />
                     <br />
+=======
+                  
+>>>>>>> Stashed changes
                   </Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Body>

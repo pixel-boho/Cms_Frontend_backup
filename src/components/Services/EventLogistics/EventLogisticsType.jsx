@@ -6,83 +6,86 @@ import "./../../../css/ServicesCss/EventLogistics/EventLogisticsType.css";
 function EventLogisticsType() {
   return (
     <>
-      <Container fluid className="container-ev-l-type-serv">
-        <h3 className="main-title-ev-l-type-serv">EVENT SERVICES OFFERED</h3>
+      <Container fluid className="position-relative">
+        <div className="container-cc-type-serv">
+          <h3 className="main-title-cc-type-serv  pb-3">Event Logistics Services Offer</h3>
+        </div>
         <img
           className="bg-main-img"
           src="images/CargoService/cargo-mixed.png"
           alt=""
         />
-        <Row className="card-ev-l-type-serv">
-          <Col md={4}>
-            <Card className="card-child">
-              <Card.Img
-                src="images/EventLogistics/SupplyChainandTransportSolutions.jpg"
-                className="ev-l-type-serv-general"
-              />
-              <Card.Body>
-                <Card.Title>Supply Chain and Transport Solutions</Card.Title>
-                <Card.Text></Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="card-child">
-              <Card.Img
-                src="images/EventLogistics/TimeCriticalFreightMovement.jpg"
-                className="ev-l-type-serv-general"
-              />
-              <Card.Body>
-                <Card.Title>Time Critical Freight Movement</Card.Title>
-                <Card.Text></Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="card-child">
-              <Card.Img
-                src="images/EventLogistics/SpecialCustomsOperations.jpg"
-                className="ev-l-type-serv-general"
-              />
-              <Card.Body>
-                <Card.Title>Special Customs Operations</Card.Title>
-                <Card.Text></Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        <Row className="card-ev-l-type-serv">
-          <Col md={4}>
-            <Card className="card-child">
-              <Card.Img
-                src="images/EventLogistics/WarehousingandEventSpecificCargoHandling.jpg"
-                className="ev-l-type-serv-general"
-              />
-              <Card.Body>
-                <Card.Title>
-                  Warehousing and Event Specific Cargo Handling
-                </Card.Title>
-                <Card.Text></Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="card-child">
-              <Card.Img
-                src="images/EventLogistics/VenueDeliveriesandOnsiteHandling.jpg"
-                className="ev-l-type-serv-general"
-              />
-              <Card.Body>
-                <Card.Title>
-                  Venue Deliveries and Onsite Handling
-                  <br />
-                  <br />
-                </Card.Title>
-                <Card.Text></Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+        <div className="container-cc-type-serv">
+          <div className="card-cc-type-serv row">
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/EventLogistics/SupplyChainandTransportSolutions.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Supply Chain and Transport Solutions</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/EventLogistics/TimeCriticalFreightMovement.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Time Critical Freight Movement</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/EventLogistics/SpecialCustomsOperations.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Special Customs Operations<br/><br/></Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </div>
+        </div>
+
+        <div className="container-cc-type-serv air-freight-second">
+          <div className="card-cc-type-serv row">
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/EventLogistics/WarehousingandEventSpecificCargoHandling.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>
+                    Warehousing and Event Specific Cargo Handling
+                  </Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="card-child-service">
+                <Card.Img
+                  src="images/EventLogistics/VenueDeliveriesandOnsiteHandling.jpg"
+                  className="cc-type-serv-general"
+                />
+                <Card.Body>
+                  <Card.Title>Venue Deliveries and Onsite Handling</Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </div>
+        </div>
       </Container>
     </>
   );

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./css/global.css";
-import 'react-tooltip/dist/react-tooltip.css' 
+import "react-tooltip/dist/react-tooltip.css";
 
 // Home page Components
 import Navbar from "./components/Home/Navbar";
